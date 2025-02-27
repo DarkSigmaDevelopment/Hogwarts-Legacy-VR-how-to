@@ -24,8 +24,8 @@ Click "More info" and "Run anyway".
 
 DISCLAIMER: use your own judgment about running software from the internet.
 
-[![](images/02.1-windows-protected-your-pc-more-info.png){ width=400px }](images/02.1-windows-protected-your-pc-more-info.png)
-[![](images/02.2-windows-protected-your-pc-run-anyway.png){ width=400px }](images/02.2-windows-protected-your-pc-run-anyway.png)
+![](images/02.1-windows-protected-your-pc-more-info.png)
+![](images/02.2-windows-protected-your-pc-run-anyway.png)
 
 Now run the installed program.  
 It should be in your Start Menu or Desktop as "Unreal VR Easy Injector"
@@ -125,7 +125,7 @@ What the d-pad does is the same as in the flat game (non-VR)
 
 ### Wand
 
-Move your right hand and the wand moves
+Move your right hand and the wand moves (motion controlled)
 
 Can't see it? Try pressing the trigger to cast a spell.  
 If it still doesn't appear, you may need to restart the game
@@ -142,10 +142,21 @@ Let's be happy how lucky we are to have this at all
 To quote Louis CK about airplanes, "You're sitting in a chair… in the SKY!"  
 <https://youtu.be/oTcAWN5R5-I?si=Gwr_ZDbzYkHQO91H>
 
+#### Epic Games Store
+
+If your installation of Hogwarts Legacy is from the Epic Games Store, then motion controls might not work at first.
+
+A suggested fix is to remove the file  
+"C:\Program Files\Epic Games\Hogwarts Legacy\Phoenix\Binaries\Win64\EOSSDK-Win64-Shipping.dll"
+
+Rename it, move it to another folder, or delete it entirely.
+
 ### Menu & Map
 
 Left controller "system" button opens the menu.  
 Hold for a second and release to open the map.
+
+Menu cursor is controlled with the analog-stick. Not motion control.
 
 If using **SteamVR**, then the "system" button will bring up the SteamVR overlay/dashboard.  
 So you need to disable that in SteamVR settings.
