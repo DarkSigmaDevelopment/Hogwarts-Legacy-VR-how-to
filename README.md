@@ -40,6 +40,10 @@ Search profile
 
 Choose 1<sup>st</sup> Person and Install
 
+This guide was originally written for the V1.05b 1st Person Profile.  
+Setup works the same for V1.06 1st Person Profile with Glyph Gestures.  
+I am still updating the controls section for the new features. (2025-03-04)
+
 ![](images/05-uevr-easy-profile-selection-and-install.png)
 
 Run **Hogwarts Legacy** as normal
@@ -141,6 +145,18 @@ It's not going to be perfect
 Let's be happy how lucky we are to have this at all  
 To quote Louis CK about airplanes, "You're sitting in a chair… in the SKY!"  
 <https://youtu.be/oTcAWN5R5-I?si=Gwr_ZDbzYkHQO91H>
+
+#### Glyph Gestures
+
+Available in the V1.06 profile
+
+Instructions are in the profile's description
+1. Press F1 to go into 1st person view
+1. Press F7 to enable gestures
+1. Gestures shown in the games spell management menu (d-pad right)
+1. Hold right trigger and draw the glyph in the air
+
+Pictures for this guide coming soon (2025-03-04)
 
 #### Epic Games Store
 
