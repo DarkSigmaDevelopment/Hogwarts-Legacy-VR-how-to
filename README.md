@@ -112,6 +112,23 @@ The left analog-stick (on the left controller) will now function as a Direction 
 
 This is known as D-shifting. Mode-shift for the d-pad.
 
+<details>
+<summary>Expand for further details</summary>
+
+> The quest controllers do not *actually* have a direction pad, aka d-pad, like an xbox controller.  
+> Instead, we must emulate one.  
+> Quest controllers have thumb-sticks, aka analogue-sticks, so we can use those like a d-pad.
+>
+> But if the stick is always acting as a d-pad, then we cannot use that stick for analogue input.  
+> So by default, the stick acts as a stick. And only acts as a d-pad when you rest your thumb on the capacitive thumb-rest as shown in the guide picture.
+>
+> This concept is known as "d-shift".  
+> As in, *shifting* the mode/behavior of the stick to act as a d-pad temporarily.
+>
+> This is the only use of the thumb-rest for this UEVR profile of this game.
+
+</details>
+
 UEVR has settings in its advanced "Inputs" tab to change this
 
 1. Swap hands (left thumb-rest, right analog-stick)
@@ -125,7 +142,9 @@ What the d-pad does is the same as in the flat game (non-VR)
 🔻 (down) Health (wiggenweld potion)  
 🔺 (up) Reveal path to tracked objective or location (see map)
 
-![](images/11-uevr-settings-d-pad-shifting.png)
+[![](images/11-uevr-settings-d-pad-shifting.png)](#open-uevr-settings-in-game)
+
+[how to open UEVR settings in-game](#open-uevr-settings-in-game)
 
 ### Wand
 
@@ -152,11 +171,28 @@ Available in the V1.06 profile
 
 Instructions are in the profile's description
 1. Press F1 to go into 1st person view
-1. Press F7 to enable gestures
-1. Gestures shown in the games spell management menu (d-pad right)
+1. Press F7 to enable spell-casting using gestures
+1. Glyphs are shown in the game's spell management menu (d-pad right)
 1. Hold right trigger and draw the glyph in the air
 
 Pictures for this guide coming soon (2025-03-04)
+
+F1 - switch 1st/3rd person view
+F2 - ???
+F3 - locomotion mode change
+F4 - fog toggle
+F5 - toggle 2D screen
+F6 - control mode change
+F7 - toggle gesture mode (cast spells with wand waving instead of buttons)
+F8 - create crosshair component
+
+Adjust wand position relative to controller
+* numpad 8 = up
+* numpad 2 = down
+* alt + numpad 8 = forward
+* alt + numpad 2 = backward
+* alt + numpad 4 = left
+* alt + numpad 2 = right
 
 #### Epic Games Store
 
