@@ -169,30 +169,60 @@ To quote Louis CK about airplanes, "You're sitting in a chair… in the SKY!"
 
 Available in the V1.06 profile
 
+![](images/11.2-uevr-easy-profile-selection-glyph-gestures-and-install.png)
+
+(this section WIP 2025-03-04)
+
+<details>
+<summary>Click to expand</summary>
+
 Instructions are in the profile's description
 1. Press F1 to go into 1st person view
 1. Press F7 to enable spell-casting using gestures
 1. Glyphs are shown in the game's spell management menu (d-pad right)
 1. Hold right trigger and draw the glyph in the air
 
-Pictures for this guide coming soon (2025-03-04)
+[raw screenshots](images/glyph-gestures/)  
+Better pictures coming soon
 
-F1 - switch 1st/3rd person view
-F2 - ???
-F3 - locomotion mode change
-F4 - fog toggle
-F5 - toggle 2D screen
-F6 - control mode change
-F7 - toggle gesture mode (cast spells with wand waving instead of buttons)
-F8 - create crosshair component
+[From profile author 'jbusfield' — 2025-03-05](https://discord.com/channels/747967102895390741/1073648949057048628/1346903324703723543)
+> Glyphs are detected based on the angles between one line you draw and the next.  
+> So if you want to draw a box for reparo, draw straight up, straight right, straight down, then straight left.  
+> Be very deliberate with your strokes.  
+> If the drawing system does not detect that what you have drawn so far will result in a valid glyph, then it will stop detecting and vibrate your controller as you saw in your first attempt.  
+> Drawing direction goes from the thick end of the line to the thin end in the examples in the spell menu.
+
+| Key | Function |
+| --- | -------- |
+| F1  | switch 1st/3rd person view |
+| F2  | switch native/sync-sequential rendering |
+| F3  | locomotion mode change <br> 1. follow wand direction <br> 2. follow head direction <br> 3. only analog-stick controls direction. smooth or snap-turn can be chosen in the UEVR settings. |
+| F4  | toggle fog |
+| F5  | toggle 2D screen |
+| F6  | non-gesture spell control mode change <br> 1. only buttons \[A\] \[B\] \[X\] \[Y\] cast spells <br> 2. can also push analog-stick in cardinal direction of spell slot as shown on HUD <br> (while holding trigger) |
+| F7  | toggle glyph gesture spell mode <br> cast spells by drawing simple shapes with the wand <br> see the game's spell management menu |
+| F8  | toggle crosshair <br> when on, a circle is shown where the wand is pointed |
 
 Adjust wand position relative to controller
-* numpad 8 = up
-* numpad 2 = down
-* alt + numpad 8 = forward
-* alt + numpad 2 = backward
-* alt + numpad 4 = left
-* alt + numpad 2 = right
+
+| Key            | Direction         |
+| -------------- | ----------------- |
+| numpad 8       | up (y-axis)       |
+| numpad 2       | down (y-axis)     |
+| alt + numpad 8 | forward (z-axis)  |
+| alt + numpad 2 | backward (z-axis) |
+| alt + numpad 4 | left (x-axis)     |
+| alt + numpad 2 | right (x-axis)    |
+
+Adjust wand rotation
+
+| Keys         | Axis           |
+| ------------ | -------------- |
+| numpad 7 / 9 | pitch (x-axis) |
+| numpad 4 / 6 | roll  (z-axis) |
+| numpad 1 / 3 | yaw   (y-axis) |
+
+</details>
 
 #### Epic Games Store
 
