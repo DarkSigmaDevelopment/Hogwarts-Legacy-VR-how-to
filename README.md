@@ -1,23 +1,57 @@
-# Hogwarts Legacy VR how-to
+# A Guide to Hogwarts Legacy in VR
 
 [Flat2VR Discord](https://discord.com/channels/747967102895390741/1073648949057048628)
 
 ## Setup
 
-Go to <https://uevrdeluxe.org>
+We will be using UEVR to make _Hogwarts Legacy_ run in VR.
 
-Download and install
+[(_super quick instructions_)](super-quick-instructions.md)
+
+This guide assumes you understand how to
+1. Download programs from the internet
+1. Install software on your computer
+1. Connect your chosen VR headset to your computer to play VR games
+
+<br>
+
+UEVR is a tool that injects VR support into Unreal Engine games that do not have it natively.
+
+UEVR website <https://uevr.io>
+
+UEVR Github <https://github.com/praydog/UEVR>
+
+<br>
+
+"Unreal Easy Injector" (previously known as UEVR Deluxe) is a tool derived from UEVR that simplifies the process of setting up UEVR by providing profiles for specific games and presenting a cleaner/simplified user interface.
+
+This is what we will be using in this guide.
+
+Unreal Easy Injector website <https://uevrdeluxe.org>
+
+Unreal Easy Injector Github <https://github.com/oduis/UEVRDeluxe>
+
+<br>
+
+Go to the [website](https://uevrdeluxe.org) and click on "Download latest release"
 
 ![](images/01-unreal-easy-injector-homepage.png)
 
-<https://github.com/oduis/UEVRDeluxe/releases>
+<br>
 
-(take the latest version, not necessarily the one in the screenshot)
+Clicking this link will take you to the Github release page.  
+Past the release notes, under "Assets", click on the **UEVREasyInjector.exe** to download it.
+
+Take the latest version. This screenshot is outdated.
 
 ![](images/02-uevr-easy-injector-v1.3-download.png)
 
-Direct download of latest EXE
+You can also get a **direct download** of the latest EXE by clicking here  
 https://github.com/oduis/UEVRDeluxe/releases/latest/download/UEVREasyInjector.exe
+
+<br>
+
+Once the installer is downloaded, run it.
 
 Windows Defender might warn you about running the installer.  
 Click "More info" and "Run anyway".
@@ -27,16 +61,26 @@ DISCLAIMER: use your own judgment about running software from the internet.
 ![](images/02.1-windows-protected-your-pc-more-info.png)
 ![](images/02.2-windows-protected-your-pc-run-anyway.png)
 
+<br>
+
 Now run the installed program.  
 It should be in your Start Menu or Desktop as "Unreal VR Easy Injector"
+
+![](images/02.3-uevr-easy-injector-icon.png)
+
+<br>
 
 Choose Hogwarts Legacy
 
 ![](images/03-uevr-easy-select-game.png)
 
-Search profile
+<br>
+
+Press "Search profile"
 
 ![](images/04-uevr-easy-profile-select-button.png)
+
+<br>
 
 Choose 1<sup>st</sup> Person and Install
 
@@ -46,27 +90,53 @@ I am still updating the controls section for the new features. (2025-03-04)
 
 ![](images/05-uevr-easy-profile-selection-and-install.png)
 
-Run **Hogwarts Legacy** as normal
+<br>
 
-Let it load. Choose your save. Let that load.
+Run **Hogwarts Legacy** as normal from Steam, Epic Games Store, etc.
 
-Now tab out of the game (Alt+Tab) so you can again see the **UEVR Easy Injector** window
+Let it load, then choose your save game, and let that load.  
+In my experience, it is best to do VR injection into a fully loaded game.  
+Not the main menu, and certainly not while on a loading screen.
 
-Connect your VR HMD (head mounted display) to your PC
+Now tab out of the game (Alt+Tab) so you can again see the **UEVR Easy Injector** window.  
+This is so we can press the "Start / Inject" button.  
+Alternatively, you can press Ctrl+Alt+U to inject.
 
-I have Meta Quest 3, using Virtual Desktop wireless and their VDXR runtime
+<br>
+
+But before we inject...!
+
+Connect your VR HMD (head mounted display) to your PC.
+
+I have Meta Quest 3, using Virtual Desktop – a paid, wireless option.
+
+If you do too, be sure to set the OpenXR Runtime to **VDXR** in the Virtual Desktop Streamer app on your PC.  
+And also ensure that Open*X*R is selected in UEVR Easy Injector under "How is your VR headset connected to the PC?".
 
 ![](images/06-virtual-desktop-options.png)
 
-If you use Meta Link wired or Meta Air Link wireless, that's fine too
+<br>
 
-If you use SteamLink with SteamVR, then choose "OpenVR, linking via SteamVR"
+If instead you use Meta Link (wired) or Meta Air Link (wireless), that's fine too.  
+For these optionals also, ensure that Open*X*R is selected in UEVR Easy Injector under "How is your VR headset connected to the PC?".
+
+However, if you use SteamLink with SteamVR, then you must choose "Open*V*R, linking via SteamVR"  
+The difference is in that one letter: the "V" instead of the "X".
 
 ![](images/07-uevr-easy-openvr-for-steam.png)
 
-If you have another HMD that's not Quest, it should also work. But I have no experience with it.
+<br>
 
-You're wearing your HMD and you can see your desktop and Hogwarts Legacy is still running?
+If you have another HMD that's not Quest, it should also work.  
+But I have no experience with it.
+
+<br>
+
+Ok!
+
+You're wearing your HMD?  
+You can see your desktop?  
+Hogwarts Legacy is still running?
 
 Great!
 
@@ -74,12 +144,20 @@ Press "Start / Inject game"
 
 ![](images/08-uevr-easy-inject-button.png)
 
+<br>
+
 Give it a few seconds, and you'll be in Hogwarts in VR
 
-Not happening?  
+Nothing's happening? 😭  
+Dont worry.  
 Press Stop Game.  
 Then Start / Inject again.  
-Should work the 2<sup>nd</sup> time.
+Should work the 2<sup>nd</sup> time.  
+(i don't know why)
+
+<br>
+
+If HMD shows a black screen and everything freezes, then **turn off Frame Generation**.
 
 ## Performance
 
@@ -173,9 +251,6 @@ Available in the V1.06 profile
 
 (this section WIP 2025-03-04)
 
-<details>
-<summary>Click to expand</summary>
-
 Instructions are in the profile's description
 1. Press F1 to go into 1st person view
 1. Press F7 to enable spell-casting using gestures
@@ -222,8 +297,6 @@ Adjust wand rotation
 | numpad 4 / 6 | roll  (z-axis) |
 | numpad 1 / 3 | yaw   (y-axis) |
 
-</details>
-
 #### Epic Games Store
 
 If your installation of Hogwarts Legacy is from the Epic Games Store, then motion controls might not work at first.
@@ -246,7 +319,7 @@ So you need to disable that in SteamVR settings.
 ![](images/11.1-steamvr-settings-dashboard-on-system-button-off.png)
 
 For some reason, this option only appears in the desktop window, not in the VR dashboard.  
-Your HMD needs to be connected. And show "Advanced Settings".
+Your HMD still needs to be connected. And show "Advanced Settings".
 
 ## Miscellaneous
 
