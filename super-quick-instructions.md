@@ -1,13 +1,16 @@
 # Super Quick Instructions
 
-1. Download latest UEVR Easy Injector [here](https://github.com/oduis/UEVRDeluxe/releases/latest/download/UEVREasyInjector.exe)
-1. Run the installer
-1. Windows Defender protected your PC: "More info" and "Run anyway"
-1. Run the installed program
-1. Choose Hogwarts Legacy
-1. Search profile
-1. Choose 1st Person and Install
-1. Run Hogwarts Legacy as you would normally (Epic Games Store, Steam, etc.) and load into your save
+1. Download, install, and run the latest version of UEVR Easy Injector
+   * https://github.com/oduis/UEVRDeluxe/releases/latest/download/UEVREasyInjector.exe
+   * Windows Defender protected your PC: "More info" and "Run anyway"
+1. Run it and set up the profile
+   1. Choose Hogwarts Legacy
+   1. Search profile
+   1. Choose 1st Person (v1.05b or v1.06) and press Install
+   1. Set the runtime based on how you connect your HMD to your PC
+      1. OpenXr - Meta Link, Virtual Desktop (even if you own Hogwarts Legacy on Steam)
+      1. OpenVr - SteamVR
+1. Run Hogwarts Legacy as you would normally and load into your save
 1. Tab out of the game
 1. Connect your VR HMD
 1. In Unreal Easy injector:

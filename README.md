@@ -31,7 +31,7 @@ Unreal Easy Injector website <https://uevrdeluxe.org>
 
 Unreal Easy Injector Github <https://github.com/oduis/UEVRDeluxe>
 
-<br>
+### Installation
 
 Go to the [website](https://uevrdeluxe.org) and click on "Download latest release"
 
@@ -61,7 +61,7 @@ DISCLAIMER: use your own judgment about running software from the internet.
 ![](images/02.1-windows-protected-your-pc-more-info.png)
 ![](images/02.2-windows-protected-your-pc-run-anyway.png)
 
-<br>
+### Profile Selection
 
 Now run the installed program.  
 It should be in your Start Menu or Desktop as "Unreal VR Easy Injector"
@@ -90,7 +90,7 @@ I am still updating the controls section for the new features. (2025-03-04)
 
 ![](images/05-uevr-easy-profile-selection-and-install.png)
 
-<br>
+### Prepare to Inject
 
 Run **Hogwarts Legacy** as normal from Steam, Epic Games Store, etc.
 
@@ -113,6 +113,10 @@ I have Meta Quest 3, using Virtual Desktop – a paid, wireless option.
 If you do too, be sure to set the OpenXR Runtime to **VDXR** in the Virtual Desktop Streamer app on your PC.  
 And also ensure that Open*X*R is selected in UEVR Easy Injector under "How is your VR headset connected to the PC?".
 
+_Even if you own Hogwarts Legacy on Steam._
+
+This is important for the VR injection to work.
+
 ![](images/06-virtual-desktop-options.png)
 
 <br>
@@ -127,10 +131,21 @@ The difference is in that one letter: the "V" instead of the "X".
 
 <br>
 
+| VR HMD to PC connection | Set Runtime to | Note |
+|---|---|---|---|
+|Meta Link (USB)|OpenXR|Even if you own Hogwarts Legacy on Steam
+|Meta Air Link|OpenXR|Even if you own Hogwarts Legacy on Steam
+|Virtual Desktop|OpenXR|Also set **VDXR** in the Virtual Desktop Streamer app on your PC. Even if you own Hogwarts Legacy on Steam|
+|SteamLink|OpenVR|With a "V", not an "X"|
+
+There is no need to use SteamVR if you use Virtual Desktop or Meta Link or any other connection method.
+
+<br>
+
 If you have another HMD that's not Quest, it should also work.  
 But I have no experience with it.
 
-<br>
+### Injecting
 
 Ok!
 
@@ -148,6 +163,8 @@ Press "Start / Inject game"
 
 Give it a few seconds, and you'll be in Hogwarts in VR
 
+## Troubleshooting
+
 Nothing's happening? 😭  
 Dont worry.  
 Press Stop Game.  
@@ -158,6 +175,13 @@ Should work the 2<sup>nd</sup> time.
 <br>
 
 If HMD shows a black screen and everything freezes, then **turn off Frame Generation**.
+
+<br>
+
+Did you forget to set the proper runtime in UEVR Easy Injector?  
+Based on how you connect your HMD to your PC
+1. OpenXr - Meta Link, Virtual Desktop (even if you own Hogwarts Legacy on Steam)
+1. OpenVr - SteamVR
 
 ## Performance
 
