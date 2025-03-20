@@ -21,15 +21,17 @@ UEVR website <https://uevr.io>
 
 UEVR Github <https://github.com/praydog/UEVR>
 
+To use this directly, see instructions here --> [Praydog's injector + Nexus Mods](standard-injector-instructions.md)
+
 <br>
 
 "Unreal Easy Injector" (previously known as UEVR Deluxe) is a tool derived from UEVR that simplifies the process of setting up UEVR by providing profiles for specific games and presenting a cleaner/simplified user interface.
 
-This is what we will be using in this guide.
-
 Unreal Easy Injector website <https://uevrdeluxe.org>
 
 Unreal Easy Injector Github <https://github.com/oduis/UEVRDeluxe>
+
+To use this method, read on.
 
 ### Installation
 
@@ -132,11 +134,11 @@ The difference is in that one letter: the "V" instead of the "X".
 <br>
 
 | VR HMD to PC connection | Set Runtime to | Note |
-|---|---|---|---|
-|Meta Link (USB)|OpenXR|Even if you own Hogwarts Legacy on Steam
-|Meta Air Link|OpenXR|Even if you own Hogwarts Legacy on Steam
-|Virtual Desktop|OpenXR|Also set **VDXR** in the Virtual Desktop Streamer app on your PC. Even if you own Hogwarts Legacy on Steam|
-|SteamLink|OpenVR|With a "V", not an "X"|
+|---|---|---|
+| Meta Link (USB) | OpenXR |Even if you own Hogwarts Legacy on Steam |
+| Meta Air Link | OpenXR | Even if you own Hogwarts Legacy on Steam |
+| Virtual Desktop | OpenXR | Also set **VDXR** in the Virtual Desktop Streamer app on your PC. Even if you own Hogwarts Legacy on Steam |
+| SteamLink | OpenVR | With a "V", not an "X" |
 
 There is no need to use SteamVR if you use Virtual Desktop or Meta Link or any other connection method.
 
