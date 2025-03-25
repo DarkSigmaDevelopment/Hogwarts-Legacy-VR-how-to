@@ -9,8 +9,9 @@ We will be using UEVR to make _Hogwarts Legacy_ run in VR.
 [(_super quick instructions_)](super-quick-instructions.md)
 
 This guide assumes you understand how to
-1. Download programs from the internet
+1. Download programs and files from the internet
 1. Install software on your computer
+1. Extract the contents of a zip file
 1. Connect your chosen VR headset to your computer to play VR games
 
 <br>
@@ -33,7 +34,7 @@ Unreal Easy Injector Github <https://github.com/oduis/UEVRDeluxe>
 
 To use this method, read on.
 
-### Installation
+### Installing Unreal Easy Injector
 
 Go to the [website](https://uevrdeluxe.org) and click on "Download latest release"
 
@@ -63,7 +64,7 @@ DISCLAIMER: use your own judgment about running software from the internet.
 ![](images/02.1-windows-protected-your-pc-more-info.png)
 ![](images/02.2-windows-protected-your-pc-run-anyway.png)
 
-### Profile Selection
+### Installing the 1st Person Profile
 
 Now run the installed program.  
 It should be in your Start Menu or Desktop as "Unreal VR Easy Injector"
@@ -92,21 +93,7 @@ I am still updating the controls section for the new features. (2025-03-04)
 
 ![](images/05-uevr-easy-profile-selection-and-install.png)
 
-### Prepare to Inject
-
-Run **Hogwarts Legacy** as normal from Steam, Epic Games Store, etc.
-
-Let it load, then choose your save game, and let that load.  
-In my experience, it is best to do VR injection into a fully loaded game.  
-Not the main menu, and certainly not while on a loading screen.
-
-Now tab out of the game (Alt+Tab) so you can again see the **UEVR Easy Injector** window.  
-This is so we can press the "Start / Inject" button.  
-Alternatively, you can press Ctrl+Alt+U to inject.
-
-<br>
-
-But before we inject...!
+### Connect your VR headset
 
 Connect your VR HMD (head mounted display) to your PC.
 
@@ -149,30 +136,30 @@ But I have no experience with it.
 
 ### Injecting
 
-Ok!
-
-You're wearing your HMD?  
-You can see your desktop?  
-Hogwarts Legacy is still running?
-
-Great!
-
 Press "Start / Inject game"
 
 ![](images/08-uevr-easy-inject-button.png)
 
+This will start Hogwarts Legacy from Steam or Epic Games, and inject the VR support automatically.
+
+Give it a few seconds after the game has loaded, and you'll be in Hogwarts in VR!
+
 <br>
 
-Give it a few seconds, and you'll be in Hogwarts in VR
+Alternatively, if Hogwarts Legacy is already running, you can press `Ctrl + Alt + U` to inject.  
+Ensure the game window is in focus.
+
+You can also tab-out of the fullscreen game (`Alt + Tab`) to see the Easy Injector window, and press "Start / Inject game" there.
 
 ## Troubleshooting
 
 Nothing's happening? 😭  
 Dont worry.  
-Press Stop Game.  
-Then Start / Inject again.  
+Press "Stop Game".  
+Then "Start / Inject game" again.  
 Should work the 2<sup>nd</sup> time.  
-(i don't know why)
+
+But this should be fixed in version `1.7.2.0+` of UEVR Easy Injector.
 
 <br>
 
@@ -182,8 +169,14 @@ If HMD shows a black screen and everything freezes, then **turn off Frame Genera
 
 Did you forget to set the proper runtime in UEVR Easy Injector?  
 Based on how you connect your HMD to your PC
-1. OpenXr - Meta Link, Virtual Desktop (even if you own Hogwarts Legacy on Steam)
-1. OpenVr - SteamVR
+1. OpenXr - for Meta Link, Virtual Desktop (even if you own Hogwarts Legacy on Steam)
+1. OpenVr - for SteamVR
+
+<br>
+
+Motion controls not working?  
+See the [Epic Games Store](#epic-games-store) section.  
+In menus, use the analog-stick on the left controller to move the cursor, regardless of where you bought the game.
 
 ## Performance
 
