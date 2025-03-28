@@ -163,7 +163,7 @@ But this should be fixed in version `1.7.2.0+` of UEVR Easy Injector.
 
 <br>
 
-If HMD shows a black screen and everything freezes, then **turn off Frame Generation**.
+If HMD shows a black screen and everything freezes, then **turn off Frame Generation** in the game's settings.
 
 <br>
 
@@ -177,6 +177,27 @@ Based on how you connect your HMD to your PC
 Motion controls not working?  
 See the [Epic Games Store](#epic-games-store) section.  
 In menus, use the analog-stick on the left controller to move the cursor, regardless of where you bought the game.
+
+<br>
+
+I'm moving in the wrong direction! Help! 🧭  
+By default, movement is set to follow the direction you point your wand, i.e. the motion controller.  
+Change this temporarily in game by pressing the `F3` key to cycle between the modes, as specified by the profile authors:
+1. Manual direction mode - rotate character direction with analog stick only. does not matter where you look or where you point your motion controllers. probably good for seated experience
+2. Head/HMD based direction mode - my choice
+3. Hand/Controller direction mode - i guess some people like this
+
+To persist your chosen mode, so that it is used each time you start and inject, you must edit a file in the profile.  
+`%appdata%\UnrealVRMod\HogwartsLegacy\plugins\ue4ss\Mods\VRFP\scripts\config.lua`
+```lua
+--[[
+Locomotion Mode
+0 = Manual direction mode
+1 = Head/HMD based direction mode
+2 = Hand/Controller direction mode
+]]--
+locomotionMode = 1
+```
 
 ## Performance
 
@@ -296,6 +317,10 @@ Better pictures coming soon
 | F6  | non-gesture spell control mode change <br> 1. only buttons \[A\] \[B\] \[X\] \[Y\] cast spells <br> 2. can also push analog-stick in cardinal direction of spell slot as shown on HUD <br> (while holding trigger) |
 | F7  | toggle glyph gesture spell mode <br> cast spells by drawing simple shapes with the wand <br> see the game's spell management menu |
 | F8  | toggle crosshair <br> when on, a circle is shown where the wand is pointed |
+
+These will all be temporary changes. They will not persist between game sessions.  
+To persist your settings, so that they are used each time you start and inject, you must edit a file in the profile.  
+`%appdata%\UnrealVRMod\HogwartsLegacy\plugins\ue4ss\Mods\VRFP\scripts\config.lua`
 
 Adjust wand position relative to controller
 
