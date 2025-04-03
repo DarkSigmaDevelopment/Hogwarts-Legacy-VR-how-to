@@ -4,7 +4,9 @@
 
 ## Setup
 
-We will be using UEVR to make _Hogwarts Legacy_ run in VR.
+We will be using UEVR to make _Hogwarts Legacy_ run in VR.  
+We will also use a profile that allows for 1st person perspective, a motion controlled wand, and casting spells by drawing glyphs in the air.  
+You can also still use an Xbox controller and toggle into 3rd person.
 
 [(_super quick instructions_)](super-quick-instructions.md)
 
@@ -43,7 +45,7 @@ Go to the [website](https://uevrdeluxe.org) and click on "Download latest releas
 <br>
 
 Clicking this link will take you to the Github release page.  
-Past the release notes, under "Assets", click on the **UEVREasyInjector.exe** to download it.
+After the release notes, under "Assets", click on the **UEVREasyInjector.exe** to download it.
 
 Take the latest version. This screenshot is outdated.
 
@@ -89,7 +91,7 @@ Choose 1<sup>st</sup> Person and Install
 
 This guide was originally written for the V1.05b 1st Person Profile.  
 Setup works the same for V1.06 1st Person Profile with Glyph Gestures.  
-I am still updating the controls section for the new features. (2025-03-04)
+I am still updating the [controls section](#glyph-gestures) for the new features. (2025-04-03)
 
 ![](images/05-uevr-easy-profile-selection-and-install.png)
 
@@ -226,7 +228,7 @@ Remember, this game was not meant to run in VR. It is not optimized for it at al
 
 ### D-Pad
 
-Rest your right thumb to the left of the \[A\] and \[B\] buttons  
+Rest your right thumb to the left of the [A] and [B] buttons  
 There is a touch sensor there. Similar to how the buttons and analog-stick also sense that your finger is resting on it but not pressing.
 
 ![](images/09-quest-3-controller-thumb-rest-highlight.jpg)
@@ -278,9 +280,9 @@ Can't see it? Try pressing the trigger to cast a spell.
 If it still doesn't appear, you may need to restart the game
 
 Cast other spells by holding the trigger and moving the analog-stick up/down/left/right to cast the corresponding spell as seen on the HUD. This is special for this UEVR profile.  
-The buttons \[A\] \[B\] \[X\] \[Y\] also work, just like in flat mode (non-VR)
+The buttons [A] [B] [X] [Y] also work, just like in flat mode (non-VR)
 
-To **open chests** or collect **field guide pages** or otherwise interact with things, point the wand at it and press \[X\]  
+To **open chests** or collect **field guide pages** or otherwise interact with things, point the wand at it and press [X]  
 You might find this a bit finicky. Get close enough to the object. Slowly rotate your hand up/down and left/right until you can see the button prompt.
 
 Remember, we're grafting first-person VR motion controls onto a third-person free-camera game  
@@ -295,7 +297,7 @@ Available in the V1.06 profile
 
 ![](images/11.2-uevr-easy-profile-selection-glyph-gestures-and-install.png)
 
-(this section WIP 2025-03-04)
+(this section WIP 2025-04-03)
 
 Instructions are in the profile's description
 1. Press F1 to go into 1st person view
@@ -320,9 +322,10 @@ Better pictures coming soon
 | F3  | locomotion mode change <br> 1. follow wand direction <br> 2. follow head direction <br> 3. only analog-stick controls direction. smooth or snap-turn can be chosen in the UEVR settings. |
 | F4  | toggle fog |
 | F5  | toggle 2D screen |
-| F6  | non-gesture spell control mode change <br> 1. only buttons \[A\] \[B\] \[X\] \[Y\] cast spells <br> 2. can also push analog-stick in cardinal direction of spell slot as shown on HUD <br> (while holding trigger) |
+| F6  | non-gesture spell control mode change <br> 1. only buttons [A] [B] [X] [Y] cast spells <br> 2. can also push analog-stick in cardinal direction of spell slot as shown on HUD <br> (while holding trigger) |
 | F7  | toggle glyph gesture spell mode <br> cast spells by drawing simple shapes with the wand <br> see the game's spell management menu |
 | F8  | toggle crosshair <br> when on, a circle is shown where the wand is pointed |
+| F9  | switch manual/auto targeting <br> in v1.06c profile|
 
 These will all be temporary changes. They will not persist between game sessions.  
 To persist your settings, so that they are used each time you start and inject, you must edit a file in the profile.  
