@@ -199,6 +199,12 @@ Locomotion Mode
 locomotionMode = 1
 ```
 
+<br>
+
+Why is the [B] button not going back in menus?  
+Why is the [X] button dodging and not interacting?  
+See [Swapped B and X buttons](#swapped-b-and-x-buttons)
+
 ## Performance
 
 Game is very laggy?
@@ -365,17 +371,34 @@ So you need to disable that in SteamVR settings.
 For some reason, this option only appears in the desktop window, not in the VR dashboard.  
 Your HMD still needs to be connected. And show "Advanced Settings".
 
+### Swapped [B] and [X] buttons
+
+By default, UEVR maps the [B] button of your right-hand motion controller to act as the [X] button of an Xbox controller.  
+In Hogwarts Legacy, this is used to interact with objects, or cast the spell assigned to the West slot.
+
+UEVR also maps the [X] button of your left-hand motion controller (for Valve Index, that's the other [A] on your left-hand) to act as the [B] button of an Xbox controller.  
+In Hogwarts Legacy, this is used to dodge, cast the spell assigned to the East slot, or go back in a menu.
+
+If instead you want the button labeled [B] to act as [B] and the button labeled [X] to act as [X], or make any other button binding changes, you can do that in [UEVR settings](#open-uevr-settings-in-game).
+
+In the "Runtime" tab, expand the "Bindings" section, which is at the bottom of "OpenXR Options" and directly above "Overlay Options".
+
+![](images/13-uevr-settings-bindings.png)
+
 ## Miscellaneous
 
 ### Open UEVR Settings In-Game
 
-Press both analog-sticks simultaneously. Or press the "Insert" \[INS\] key on your keyboard.
+Press both analog-sticks simultaneously.  
+Or press the "Insert" [INS] key on your keyboard.
 
-Press again to close
+Press again to close.
 
-If the menu does not appear before you, then it might be behind you or to the side
+If the menu does not appear before you, then it might be behind you or to the side.  
+Try turning your head to look around.  
+Or recenter your view. On Quest, do that by holding the Meta button.
 
-Check the "Show Advanced Options" checkbox to see even more things to fiddle with
+At the top-left of the floating settings window, check the "Show Advanced Options" checkbox to see even more things to fiddle with.
 
 ### HUD following hand instead of head
 
