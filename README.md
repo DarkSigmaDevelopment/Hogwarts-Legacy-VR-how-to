@@ -1,6 +1,8 @@
 # A Guide to Hogwarts Legacy in VR
 
-[Flat2VR Discord](https://discord.com/channels/747967102895390741/1073648949057048628)
+Join the **Flat2VR Discord**
+1. [#ue-hogwarts](https://discord.com/channels/747967102895390741/1363692053229207792) (new channel 2025-04-20)
+1. [old thread](https://discord.com/channels/747967102895390741/1073648949057048628) under #ue-games
 
 ## Setup
 
@@ -95,6 +97,16 @@ I am still updating the [controls section](#glyph-gestures) for the new features
 
 ![](images/05-uevr-easy-profile-selection-and-install.png)
 
+This profile is created by Pande4360, jbusfield, DJ  
+and is therefore called the PJD profile.  
+It can also be downloaded from Nexus Mods  
+https://www.nexusmods.com/hogwartslegacy/mods/2264
+
+You can play Hogwarts Legacy in VR without this profile.  
+It will be in 3rd person, controlled by your Xbox controller, or keyboard and mouse.  
+If you want to play in 1st person with motion controls, then you need this profile.  
+Also see [Profile Configuration Options](#profile-configuration-options) for additional settings you can change provided by this profile.
+
 ### Connect your VR headset
 
 Connect your VR HMD (head mounted display) to your PC.
@@ -165,7 +177,12 @@ But this should be fixed in version `1.7.2.0+` of UEVR Easy Injector.
 
 <br>
 
-If HMD shows a black screen and everything freezes, then **turn off Frame Generation** in the game's settings.
+If HMD shows a black screen and everything freezes, then **turn off Frame Generation** in the game's settings.  
+This is _not_ the same as "space warp"/SSW/ASW.
+
+<br>
+
+Turn off **HAGS** (Hardware Accelerated GPU Scheduling) in Windows settings and restart your computer.
 
 <br>
 
@@ -176,9 +193,22 @@ Based on how you connect your HMD to your PC
 
 <br>
 
-Motion controls not working?  
-See the [Epic Games Store](#epic-games-store) section.  
-In menus, use the analog-stick on the left controller to move the cursor, regardless of where you bought the game.
+Not in 1st person?  
+Press [F1] on your keyboard.  
+See [Profile Configuration Options](#profile-configuration-options) for other function keys provided by the PJD profile.
+
+<br>
+
+Motion controls not working?
+
+Menus do not have motion controls.  
+Instead, use the analog-stick on the left controller to move the cursor.
+
+For Valve Index controllers, try this  
+https://github.com/mark-mon/uevr-index-controls
+
+If your copy of Hogwarts Legacy is from the Epic Games Store, then see the [Epic Games Store](#epic-games-store) section.  
+You need to remove a file from the game directory.
 
 <br>
 
@@ -315,6 +345,20 @@ Better pictures coming soon
 > If the drawing system does not detect that what you have drawn so far will result in a valid glyph, then it will stop detecting and vibrate your controller as you saw in your first attempt.  
 > Drawing direction goes from the thick end of the line to the thin end in the examples in the spell menu.
 
+#### Epic Games Store
+
+If your installation of Hogwarts Legacy is from the Epic Games Store, then motion controls might not work at first.
+
+A suggested fix is to remove the file  
+"C:\Program Files\Epic Games\Hogwarts Legacy\Phoenix\Binaries\Win64\EOSSDK-Win64-Shipping.dll"
+
+Rename it, move it to another folder, or delete it entirely.
+
+### Profile Configuration Options
+
+These keyboard functions are provided by the PJD profile.  
+Not by UEVR itself.
+
 | Key | Function |
 | --- | -------- |
 | F1  | switch 1st/3rd person view |
@@ -330,6 +374,8 @@ Better pictures coming soon
 These will all be temporary changes. They will not persist between game sessions.  
 To persist your settings, so that they are used each time you start and inject, you must edit a file in the profile.  
 `%appdata%\UnrealVRMod\HogwartsLegacy\plugins\ue4ss\Mods\VRFP\scripts\config.lua`
+ 
+<br>
 
 Adjust wand position relative to controller
 
@@ -349,15 +395,6 @@ Adjust wand rotation
 | numpad 7 / 9 | pitch (x-axis) |
 | numpad 4 / 6 | roll  (z-axis) |
 | numpad 1 / 3 | yaw   (y-axis) |
-
-#### Epic Games Store
-
-If your installation of Hogwarts Legacy is from the Epic Games Store, then motion controls might not work at first.
-
-A suggested fix is to remove the file  
-"C:\Program Files\Epic Games\Hogwarts Legacy\Phoenix\Binaries\Win64\EOSSDK-Win64-Shipping.dll"
-
-Rename it, move it to another folder, or delete it entirely.
 
 ### Menu & Map
 
@@ -387,6 +424,11 @@ If instead you want the button labeled [B] to act as [B] and the button labeled 
 In the "Runtime" tab, expand the "Bindings" section, which is at the bottom of "OpenXR Options" and directly above "Overlay Options".
 
 ![](images/13-uevr-settings-bindings.png)
+
+<br>
+
+With the PJD profile, "up" on the right analog-stick will jump, and "down" will dodge.  
+So you don't have to remap the [B] and [X] buttons to dodge well, if you don't want to.
 
 ## Miscellaneous
 
