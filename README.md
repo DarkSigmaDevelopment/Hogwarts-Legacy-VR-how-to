@@ -49,7 +49,7 @@ Go to the [website](https://uevrdeluxe.org) and click on "Download latest releas
 Clicking this link will take you to the Github release page.  
 After the release notes, under "Assets", click on the **UEVREasyInjector.exe** to download it.
 
-Take the latest version. This screenshot is outdated.
+Take the latest version. This screenshot might be outdated.
 
 ![](images/02-uevr-easy-injector-v1.3-download.png)
 
@@ -89,11 +89,8 @@ Press "Search profile"
 
 <br>
 
-Choose 1<sup>st</sup> Person and Install
-
-This guide was originally written for the V1.05b 1st Person Profile.  
-Setup works the same for V1.06 1st Person Profile with Glyph Gestures.  
-I am still updating the [controls section](#glyph-gestures) for the new features. (2025-04-03)
+Select the 1<sup>st</sup> Person profile created by Pande4360, jbusfield, DJ  
+Then press "Install"
 
 ![](images/05-uevr-easy-profile-selection-and-install.png)
 
@@ -121,6 +118,7 @@ _Even if you own Hogwarts Legacy on Steam._
 This is important for the VR injection to work.
 
 ![](images/06-virtual-desktop-options.png)
+![](images/07.1-uevr-easy-openxr-for-vd.png)
 
 <br>
 
@@ -307,13 +305,14 @@ What the d-pad does is the same as in the flat game (non-VR)
 Move your right hand and the wand moves (motion controlled)
 
 Can't see it? Try pressing the trigger to cast a spell.  
-If it still doesn't appear, you may need to restart the game
+If it gets detached from your controller and stuck in the world, then just "grab your right ear": hold the right controller up to your right ear near  your HMD and press the grip button.  
+If it still doesn't appear, you may need to restart the game.
 
-Cast other spells by holding the trigger and moving the analog-stick up/down/left/right to cast the corresponding spell as seen on the HUD. This is special for this UEVR profile.  
-The buttons [A] [B] [X] [Y] also work, just like in flat mode (non-VR)
+Cast other spells by holding the trigger and moving the analog-stick up/down/left/right to cast the corresponding spell as seen on the HUD. This is a special feature of this PJD profile.  
+The buttons [A] [B] [X] [Y] also work to cast spells, just like in flat mode (non-VR).
 
 To **open chests** or collect **field guide pages** or otherwise interact with things, point the wand at it and press [X]  
-You might find this a bit finicky. Get close enough to the object. Slowly rotate your hand up/down and left/right until you can see the button prompt.
+You might find this a bit finicky. Get close enough to the object. Or maybe you're too close. Slowly rotate your hand up/down and left/right until you can see the button prompt.
 
 Remember, we're grafting first-person VR motion controls onto a third-person free-camera game  
 It's not going to be perfect  
@@ -323,20 +322,13 @@ To quote Louis CK about airplanes, "You're sitting in a chair… in the SKY!"
 
 #### Glyph Gestures
 
-Available in the V1.06 profile
-
-![](images/11.2-uevr-easy-profile-selection-glyph-gestures-and-install.png)
-
-(this section WIP 2025-04-03)
-
 Instructions are in the profile's description
 1. Press F1 to go into 1st person view
 1. Press F7 to enable spell-casting using gestures
 1. Glyphs are shown in the game's spell management menu (d-pad right)
 1. Hold right trigger and draw the glyph in the air
 
-[raw screenshots](images/glyph-gestures/)  
-Better pictures coming soon
+-> [Screenshots of all glyphs](images/glyph-gestures/) <-
 
 [From profile author 'jbusfield' — 2025-03-05](https://discord.com/channels/747967102895390741/1073648949057048628/1346903324703723543)
 > Glyphs are detected based on the angles between one line you draw and the next.  
@@ -424,6 +416,29 @@ If instead you want the button labeled [B] to act as [B] and the button labeled 
 In the "Runtime" tab, expand the "Bindings" section, which is at the bottom of "OpenXR Options" and directly above "Overlay Options".
 
 ![](images/13-uevr-settings-bindings.png)
+
+If you have a Meta Quest, then you can just put [this json file](_interaction_profiles_oculus_touch_controller.json) in the UEVR profiles directory for Hogwarts Legacy and it will override the default bindings.
+
+The important bits are these:
+```json
+{
+    "action": "bbuttonright",
+    "path": "/user/hand/left/input/x/click"
+},
+{
+    "action": "bbuttontouchright",
+    "path": "/user/hand/left/input/x/touch"
+},
+...
+{
+    "action": "abuttonleft",
+    "path": "/user/hand/right/input/b/click"
+},
+{
+    "action": "abuttontouchleft",
+    "path": "/user/hand/right/input/b/touch"
+}
+```
 
 <br>
 
