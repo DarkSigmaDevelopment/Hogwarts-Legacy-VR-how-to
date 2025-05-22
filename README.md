@@ -2,7 +2,7 @@
 
 Join the **Flat2VR Discord**
 1. [#ue-hogwarts](https://discord.com/channels/747967102895390741/1363692053229207792) (new channel 2025-04-20)
-1. [old thread](https://discord.com/channels/747967102895390741/1073648949057048628) under #ue-games
+2. [old thread](https://discord.com/channels/747967102895390741/1073648949057048628) under #ue-games
 
 ## Setup
 
@@ -14,9 +14,9 @@ You can also still use an Xbox controller and toggle into 3rd person.
 
 This guide assumes you understand how to
 1. Download programs and files from the internet
-1. Install software on your computer
-1. Extract the contents of a zip file
-1. Connect your chosen VR headset to your computer to play VR games
+2. Install software on your computer
+3. Extract the contents of a zip file
+4. Connect your chosen VR headset to your computer to play VR games
 
 <br>
 
@@ -34,7 +34,7 @@ To use this directly, see instructions here --> [Praydog's injector + Nexus Mods
 
 Unreal Easy Injector website <https://uevrdeluxe.org>
 
-Unreal Easy Injector Github <https://github.com/oduis/UEVRDeluxe>
+Unreal Easy Injector GitHub <https://github.com/oduis/UEVRDeluxe>
 
 To use this method, read on.
 
@@ -46,7 +46,7 @@ Go to the [website](https://uevrdeluxe.org) and click on "Download latest releas
 
 <br>
 
-Clicking this link will take you to the Github release page.  
+Clicking this link will take you to the GitHub release page.  
 After the release notes, under "Assets", click on the **UEVREasyInjector.exe** to download it.
 
 Take the latest version. This screenshot might be outdated.
@@ -111,7 +111,7 @@ Connect your VR HMD (head mounted display) to your PC.
 I have Meta Quest 3, using Virtual Desktop – a paid, wireless option.
 
 If you do too, be sure to set the OpenXR Runtime to **VDXR** in the Virtual Desktop Streamer app on your PC.  
-And also ensure that Open*X*R is selected in UEVR Easy Injector under "How is your VR headset connected to the PC?".
+And also ensure that Open**X**R is selected in UEVR Easy Injector under "How is your VR headset connected to the PC?"
 
 _Even if you own Hogwarts Legacy on Steam._
 
@@ -123,23 +123,23 @@ This is important for the VR injection to work.
 <br>
 
 If instead you use Meta Link (wired) or Meta Air Link (wireless), that's fine too.  
-For these optionals also, ensure that Open*X*R is selected in UEVR Easy Injector under "How is your VR headset connected to the PC?".
+For these optionals also, ensure that Open**X**R is selected in UEVR Easy Injector under "How is your VR headset connected to the PC?".
 
-However, if you use SteamLink with SteamVR, then you must choose "Open*V*R, linking via SteamVR"  
+<ins>However, if you use SteamLink with SteamVR, then you must choose "Open**V**R, linking via SteamVR"</ins>  
 The difference is in that one letter: the "V" instead of the "X".
 
 ![](images/07-uevr-easy-openvr-for-steam.png)
 
 <br>
 
-| VR HMD to PC connection | Set Runtime to | Note |
-|---|---|---|
-| Meta Link (USB) | OpenXR |Even if you own Hogwarts Legacy on Steam |
-| Meta Air Link | OpenXR | Even if you own Hogwarts Legacy on Steam |
-| Virtual Desktop | OpenXR | Also set **VDXR** in the Virtual Desktop Streamer app on your PC. Even if you own Hogwarts Legacy on Steam |
-| SteamLink | OpenVR | With a "V", not an "X" |
+| VR HMD to PC connection | Set Runtime to | Note                                                                                                       |
+|-------------------------|----------------|------------------------------------------------------------------------------------------------------------|
+| Meta Link (USB)         | OpenXR         | Even if you own Hogwarts Legacy on Steam                                                                   |
+| Meta Air Link           | OpenXR         | Even if you own Hogwarts Legacy on Steam                                                                   |
+| Virtual Desktop         | OpenXR         | Also set **VDXR** in the Virtual Desktop Streamer app on your PC. Even if you own Hogwarts Legacy on Steam |
+| SteamLink               | OpenVR         | With a "V", not an "X"                                                                                     |
 
-There is no need to use SteamVR if you use Virtual Desktop or Meta Link or any other connection method.
+There is no need to use SteamVR if you are already connected to your PC with Virtual Desktop or Meta Link or Air Link.
 
 <br>
 
@@ -148,25 +148,39 @@ But I have no experience with it.
 
 ### Injecting
 
-Press "Start / Inject game"
+Keep the "Unreal VR Easy Injector" window open.
 
-![](images/08-uevr-easy-inject-button.png)
+Start **Hogwarts Legacy** as you normally would. Through Steam or Epic or wherever.
 
-This will start Hogwarts Legacy from Steam or Epic Games, and inject the VR support automatically.
+Wait for the game to load and enter the character/save-slot selection screen.
 
-Give it a few seconds after the game has loaded, and you'll be in Hogwarts in VR!
+Put on your HMD again, if you took it off, and ensure it is still connected to your desktop.
+
+Now, with the Hogwarts Legacy window in focus, press `Ctrl + Alt + U` on your keyboard to inject VR into the game.
+
+There might be a few seconds of darkness. Be patient. But then you will be immersed in the wonderful Wizarding World!
+
+🧙‍♂️✨🧙‍♀️
 
 <br>
 
-Alternatively, if Hogwarts Legacy is already running, you can press `Ctrl + Alt + U` to inject.  
-Ensure the game window is in focus.
+Use the left thumb-stick to move the curser and select your character with the [A] button on your right controller.
 
-You can also tab-out of the fullscreen game (`Alt + Tab`) to see the Easy Injector window, and press "Start / Inject game" there.
+If you are starting a new game, there is a rollercoaster at Gringotts early on.  
+While this is super cool to experience in VR, it is also known to crash the game.  
+So after enjoying it once, you might have to play through that part without VR to progress.
+
+<br>
+
+If the `Ctrl + Alt + U` keyboard shortcut is not working, or you just don't want to use it, you can also tab-out of the fullscreen game (`Alt + Tab`) to see the Easy Injector window, and press "Start / Inject game" there.
+
+![](images/08-uevr-easy-inject-button.png)
 
 ## Troubleshooting
 
 Nothing's happening? 😭  
 Dont worry.  
+Use `Alt + Tab` to focus the Easy Injector window.  
 Press "Stop Game".  
 Then "Start / Inject game" again.  
 Should work the 2<sup>nd</sup> time.  
@@ -187,7 +201,7 @@ Turn off **HAGS** (Hardware Accelerated GPU Scheduling) in Windows settings and 
 Did you forget to set the proper runtime in UEVR Easy Injector?  
 Based on how you connect your HMD to your PC
 1. OpenXr - for Meta Link, Virtual Desktop (even if you own Hogwarts Legacy on Steam)
-1. OpenVr - for SteamVR
+2. OpenVr - for SteamVR
 
 <br>
 
@@ -235,6 +249,10 @@ Why is the [B] button not going back in menus?
 Why is the [X] button dodging and not interacting?  
 See [Swapped B and X buttons](#swapped-b-and-x-buttons)
 
+<br>
+
+Cracked versions of the game do not work!
+
 ## Performance
 
 Game is very laggy?
@@ -247,7 +265,7 @@ Turn graphics preset down to Low
 
 Try DLSS on and see if it helps
 
-If the in-game settings don't get you a frame-rate that you find acceptable, then lower the resolution and/or bit-rate in the settings of your PC link software (Virtual Desktop, Meta Link, SteamVR, etc.)
+If the in-game settings don't get you a frame-rate that you find acceptable, then lower the resolution and/or bit-rate in the settings of your PC link software (Virtual Desktop, Meta Link, SteamVR, etc.)  
 A restart of the game is likely required
 
 Remember, this game was not meant to run in VR. It is not optimized for it at all. It's already hardware intensive when flat 4K at 60 fps, and we're shoving VR down its throat. That means everything is rendered twice, once for each eye's perspective, at higher resolutions and higher frame-rate.
@@ -324,9 +342,9 @@ To quote Louis CK about airplanes, "You're sitting in a chair… in the SKY!"
 
 Instructions are in the profile's description
 1. Press F1 to go into 1st person view
-1. Press F7 to enable spell-casting using gestures
-1. Glyphs are shown in the game's spell management menu (d-pad right)
-1. Hold right trigger and draw the glyph in the air
+2. Press F7 to enable spell-casting using gestures
+3. Glyphs are shown in the game's spell management menu (d-pad right)
+4. Hold right trigger and draw the glyph in the air
 
 -> [Screenshots of all glyphs](images/glyph-gestures/) <-
 
@@ -351,17 +369,17 @@ Rename it, move it to another folder, or delete it entirely.
 These keyboard functions are provided by the PJD profile.  
 Not by UEVR itself.
 
-| Key | Function |
-| --- | -------- |
-| F1  | switch 1st/3rd person view |
-| F2  | switch native/sync-sequential rendering |
-| F3  | locomotion mode change <br> 1. follow wand direction <br> 2. follow head direction <br> 3. only analog-stick controls direction. smooth or snap-turn can be chosen in the UEVR settings. |
-| F4  | toggle fog |
-| F5  | toggle 2D screen |
+| Key | Function                                                                                                                                                                                                   |
+|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| F1  | switch 1st/3rd person view                                                                                                                                                                                 |
+| F2  | switch native/sync-sequential rendering                                                                                                                                                                    |
+| F3  | locomotion mode change <br> 1. follow wand direction <br> 2. follow head direction <br> 3. only analog-stick controls direction. smooth or snap-turn can be chosen in the UEVR settings.                   |
+| F4  | toggle fog                                                                                                                                                                                                 |
+| F5  | toggle 2D screen                                                                                                                                                                                           |
 | F6  | non-gesture spell control mode change <br> 1. only buttons [A] [B] [X] [Y] cast spells <br> 2. can also push analog-stick in cardinal direction of spell slot as shown on HUD <br> (while holding trigger) |
-| F7  | toggle glyph gesture spell mode <br> cast spells by drawing simple shapes with the wand <br> see the game's spell management menu |
-| F8  | toggle crosshair <br> when on, a circle is shown where the wand is pointed |
-| F9  | switch manual/auto targeting <br> in v1.06c profile|
+| F7  | toggle glyph gesture spell mode <br> cast spells by drawing simple shapes with the wand <br> see the game's spell management menu                                                                          |
+| F8  | toggle crosshair <br> when on, a circle is shown where the wand is pointed                                                                                                                                 |
+| F9  | switch manual/auto targeting                                                                                                                                                                               |
 
 These will all be temporary changes. They will not persist between game sessions.  
 To persist your settings, so that they are used each time you start and inject, you must edit a file in the profile.  
@@ -372,7 +390,7 @@ To persist your settings, so that they are used each time you start and inject, 
 Adjust wand position relative to controller
 
 | Key            | Direction         |
-| -------------- | ----------------- |
+|----------------|-------------------|
 | numpad 8       | up (y-axis)       |
 | numpad 2       | down (y-axis)     |
 | alt + numpad 8 | forward (z-axis)  |
@@ -383,7 +401,7 @@ Adjust wand position relative to controller
 Adjust wand rotation
 
 | Keys         | Axis           |
-| ------------ | -------------- |
+|--------------|----------------|
 | numpad 7 / 9 | pitch (x-axis) |
 | numpad 4 / 6 | roll  (z-axis) |
 | numpad 1 / 3 | yaw   (y-axis) |
