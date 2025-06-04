@@ -178,6 +178,7 @@ If the `Ctrl + Alt + U` keyboard shortcut is not working, or you just don't want
 
 ## Troubleshooting
 
+0️⃣
 Nothing's happening? 😭  
 Dont worry.  
 Use `Alt + Tab` to focus the Easy Injector window.  
@@ -189,15 +190,18 @@ But this should be fixed in version `1.7.2.0+` of UEVR Easy Injector.
 
 <br>
 
+1️⃣
 If HMD shows a black screen and everything freezes, then **turn off Frame Generation** in the game's settings.  
 This is _not_ the same as "space warp"/SSW/ASW.
 
 <br>
 
+2️⃣
 Turn off **HAGS** (Hardware Accelerated GPU Scheduling) in Windows settings and restart your computer.
 
 <br>
 
+3️⃣
 Did you forget to set the proper runtime in UEVR Easy Injector?  
 Based on how you connect your HMD to your PC
 1. OpenXr - for Meta Link, Virtual Desktop (even if you own Hogwarts Legacy on Steam)
@@ -205,12 +209,14 @@ Based on how you connect your HMD to your PC
 
 <br>
 
+4️⃣
 Not in 1st person?  
 Press [F1] on your keyboard.  
 See [Profile Configuration Options](#profile-configuration-options) for other function keys provided by the PJD profile.
 
 <br>
 
+5️⃣
 Motion controls not working?
 
 Menus do not have motion controls.  
@@ -224,7 +230,8 @@ You need to remove a file from the game directory.
 
 <br>
 
-I'm moving in the wrong direction! Help! 🧭  
+6️⃣
+I'm moving in the wrong direction! Help!  
 By default, movement is set to follow the direction you point your wand, i.e. the motion controller.  
 Change this temporarily in game by pressing the `F3` key to cycle between the modes, as specified by the profile authors:
 1. Manual direction mode - rotate character direction with analog stick only. does not matter where you look or where you point your motion controllers. probably good for seated experience
@@ -245,12 +252,14 @@ locomotionMode = 1
 
 <br>
 
+7️⃣
 Why is the [B] button not going back in menus?  
 Why is the [X] button dodging and not interacting?  
 See [Swapped B and X buttons](#swapped-b-and-x-buttons)
 
 <br>
 
+8️⃣
 Cracked versions of the game do not work!
 
 ## Performance
@@ -340,20 +349,41 @@ To quote Louis CK about airplanes, "You're sitting in a chair… in the SKY!"
 
 #### Glyph Gestures
 
-Instructions are in the profile's description
-1. Press F1 to go into 1st person view
-2. Press F7 to enable spell-casting using gestures
-3. Glyphs are shown in the game's spell management menu (d-pad right)
-4. Hold right trigger and draw the glyph in the air
+Press F7 on your keyboard to enable spell-casting using gestures.
 
--> [Screenshots of all glyphs](images/glyph-gestures/) <-
+Glyphs are shown in the game's spell management menu (d-pad right).  
+Hover the curser over a spell to see what glyph to draw to cast that spell.  
+The thicker and sparklier part of each line is its start, and it tapers off to its end.
 
-[From profile author 'jbusfield' — 2025-03-05](https://discord.com/channels/747967102895390741/1073648949057048628/1346903324703723543)
+--> [Screenshots of all glyphs](images/glyph-gestures/) <--
+
+To cast spells...  
+Go out of the menu.  
+**Hold right trigger and draw the glyph in the air.**  
+Time will slow down while you draw.  
+Release the trigger and the spell will be cast.
+
+The length of the lines you draw is not as important as the angle between the lines.
+
+Tips from [profile author 'jbusfield' — 2025-03-05](https://discord.com/channels/747967102895390741/1073648949057048628/1346903324703723543)
 > Glyphs are detected based on the angles between one line you draw and the next.  
 > So if you want to draw a box for reparo, draw straight up, straight right, straight down, then straight left.  
 > Be very deliberate with your strokes.  
 > If the drawing system does not detect that what you have drawn so far will result in a valid glyph, then it will stop detecting and vibrate your controller as you saw in your first attempt.  
 > Drawing direction goes from the thick end of the line to the thin end in the examples in the spell menu.
+
+<br>
+
+For Glyph Gestures to be enable each tine you start the game and inject, you must edit a file in the profile.  
+`%appdata%\UnrealVRMod\HogwartsLegacy\plugins\ue4ss\Mods\VRFP\scripts\config.lua`
+```lua
+--[[
+Gesture Mode
+0 = No gestures
+1 = Spells can be cast by drawing glyphs. Wrist flick casts previous spell
+]]--
+gestureMode = 1
+```
 
 #### Epic Games Store
 
@@ -377,7 +407,7 @@ Not by UEVR itself.
 | F4  | toggle fog                                                                                                                                                                                                 |
 | F5  | toggle 2D screen                                                                                                                                                                                           |
 | F6  | non-gesture spell control mode change <br> 1. only buttons [A] [B] [X] [Y] cast spells <br> 2. can also push analog-stick in cardinal direction of spell slot as shown on HUD <br> (while holding trigger) |
-| F7  | toggle glyph gesture spell mode <br> cast spells by drawing simple shapes with the wand <br> see the game's spell management menu                                                                          |
+| F7  | toggle glyph gesture spell mode <br> see the [Glyph Gestures](#glyph-gestures) section                                                                                                                     |
 | F8  | toggle crosshair <br> when on, a circle is shown where the wand is pointed                                                                                                                                 |
 | F9  | switch manual/auto targeting                                                                                                                                                                               |
 
@@ -435,7 +465,10 @@ In the "Runtime" tab, expand the "Bindings" section, which is at the bottom of "
 
 ![](images/13-uevr-settings-bindings.png)
 
-If you have a Meta Quest, then you can just put [this json file](_interaction_profiles_oculus_touch_controller.json) in the UEVR profiles directory for Hogwarts Legacy and it will override the default bindings.
+If you have a Meta Quest, then you can put this json file [_interaction_profiles_oculus_touch_controller.json](_interaction_profiles_oculus_touch_controller.json)  
+directly into your UEVR profiles directory for Hogwarts Legacy (`%appdata%\UnrealVRMod\HogwartsLegacy`)  
+and it will override the default bindings.  
+This is the same as if you had changed the bindings in the UEVR settings yourself.
 
 The important bits are these:
 ```json
