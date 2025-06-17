@@ -4,6 +4,10 @@ Join the **Flat2VR Discord**
 1. [#ue-hogwarts](https://discord.com/channels/747967102895390741/1363692053229207792) (new channel 2025-04-20)
 2. [old thread](https://discord.com/channels/747967102895390741/1073648949057048628) under #ue-games
 
+> [!IMPORTANT]
+> Version 1.08 of the profile was just released (2025-06-17), bringing new features and performance improvements.  
+> Updates to this guide comming soon.
+
 ## Setup
 
 We will be using UEVR to make _Hogwarts Legacy_ run in VR.  
@@ -392,24 +396,26 @@ If your installation of Hogwarts Legacy is from the Epic Games Store, then motio
 A suggested fix is to remove the file  
 "C:\Program Files\Epic Games\Hogwarts Legacy\Phoenix\Binaries\Win64\EOSSDK-Win64-Shipping.dll"
 
-Rename it, move it to another folder, or delete it entirely.
+Rename it or move it to another folder.
+
+⚠ WARNING: without this file, you may experience issues connecting to your WB Games account and installing official mods.
 
 ### Profile Configuration Options
 
 These keyboard functions are provided by the PJD profile.  
 Not by UEVR itself.
 
-| Key | Function                                                                                                                                                                                                   |
-|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| F1  | switch 1st/3rd person view                                                                                                                                                                                 |
-| F2  | switch native/sync-sequential rendering                                                                                                                                                                    |
-| F3  | locomotion mode change <br> 1. follow wand direction <br> 2. follow head direction <br> 3. only analog-stick controls direction. smooth or snap-turn can be chosen in the UEVR settings.                   |
-| F4  | toggle fog                                                                                                                                                                                                 |
-| F5  | toggle 2D screen                                                                                                                                                                                           |
-| F6  | non-gesture spell control mode change <br> 1. only buttons [A] [B] [X] [Y] cast spells <br> 2. can also push analog-stick in cardinal direction of spell slot as shown on HUD <br> (while holding trigger) |
-| F7  | toggle glyph gesture spell mode <br> see the [Glyph Gestures](#glyph-gestures) section                                                                                                                     |
-| F8  | toggle crosshair <br> when on, a circle is shown where the wand is pointed                                                                                                                                 |
-| F9  | switch manual/auto targeting                                                                                                                                                                               |
+| Key | Function                                                                                                                                                                                                                                                                                                                          |
+|-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| F1  | Switch between 1st and 3rd person point of view.                                                                                                                                                                                                                                                                                  |
+| F2  | Switch between UEVR's Native Stereo and Synced Sequential rendering methods.                                                                                                                                                                                                                                                      |
+| F3  | Cycle through the player Locomotion (movement) modes: <br> 1. Follow wand/hand direction. <br> 2. Follow head direction. <br> 3. Only analog-stick controls direction. Smooth or snap-turn can be chosen in the [UEVR settings](#open-uevr-settings-in-game)                                                                      |
+| F4  | Toggle the game's Fog effect on/off.                                                                                                                                                                                                                                                                                              |
+| F5  | Toggle 2D screen.                                                                                                                                                                                                                                                                                                                 |
+| F6  | Enable/disable the use of the analog-stick for casting spells, when Gestures are disabled. <br> When enabled, hold the right trigger and push the right analog-stick in the cardinal direction of the spell slot as shown on the HUD. <br> When disabled, only the buttons [A] [B] [X] [Y] cast spells while holding the trigger. |
+| F7  | Enable/disable casting spells by drawing Glyphs in the air. <br> See the [Glyph Gestures](#glyph-gestures) section.                                                                                                                                                                                                               |
+| F8  | Toggle visibility of a circular aiming reticle that shows where your wand is pointing.                                                                                                                                                                                                                                            |
+| F9  | Switch between manual and auto Targeting.                                                                                                                                                                                                                                                                                         |
 
 These will all be temporary changes. They will not persist between game sessions.  
 To persist your settings, so that they are used each time you start and inject, you must edit a file in the profile.  
