@@ -5,7 +5,7 @@ Join the **Flat2VR Discord**
 2. [old thread](https://discord.com/channels/747967102895390741/1073648949057048628) under #ue-games
 
 > [!IMPORTANT]
-> Version 1.08 of the profile was just released (2025-06-17), bringing new features and performance improvements.  
+> Version 1.08a of the profile has been released (2025-06-17), bringing new features and performance improvements.  
 > This guide has been updated for the new configuration options, and also retains instructions for the older profiles.
 
 ## Setup
@@ -21,6 +21,8 @@ This guide assumes you understand how to
 2. Install software on your computer
 3. Extract the contents of a zip file
 4. Connect your chosen VR headset to your computer to play VR games
+
+You should also have already played some of Hogwarts Legacy without VR and be familiar with the controls for moving, casting spells, and changing assigned spells.
 
 <br>
 
@@ -101,7 +103,9 @@ Then press "Install"
 This profile is created by Pande4360, jbusfield, DJ  
 and is therefore called the PJD profile.  
 It can also be downloaded from Nexus Mods  
-https://www.nexusmods.com/hogwartslegacy/mods/2264
+https://www.nexusmods.com/hogwartslegacy/mods/2264  
+Or GitHub  
+https://github.com/jbusfield/HL_UEVR
 
 You can play Hogwarts Legacy in VR without this profile.  
 It will be in 3rd person, controlled by your Xbox controller, or keyboard and mouse.  
@@ -184,19 +188,19 @@ If the `Ctrl + Alt + U` keyboard shortcut is not working, or you just don't want
 
 0️⃣
 Nothing's happening? 😭  
-Dont worry.  
-Use `Alt + Tab` to focus the Easy Injector window.  
-Press "Stop Game".  
-Then "Start / Inject game" again.  
-Should work the 2<sup>nd</sup> time.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dont worry.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use `Alt + Tab` to focus the Easy Injector window.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Press "Stop Game".  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Then "Start / Inject game" again.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Should work the 2<sup>nd</sup> time.  
 
-But this should be fixed in version `1.7.2.0+` of UEVR Easy Injector.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; But this should be fixed in version `1.7.2.0+` of UEVR Easy Injector.
 
 <br>
 
 1️⃣
 If HMD shows a black screen and everything freezes, then **turn off Frame Generation** in the game's settings.  
-This is _not_ the same as "space warp"/SSW/ASW.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This is _not_ the same as "space warp"/SSW/ASW.
 
 <br>
 
@@ -207,7 +211,7 @@ Turn off **HAGS** (Hardware Accelerated GPU Scheduling) in Windows settings and 
 
 3️⃣
 Did you forget to set the proper runtime in UEVR Easy Injector?  
-Based on how you connect your HMD to your PC
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Based on how you connect your HMD to your PC
 1. OpenXr - for Meta Link, Virtual Desktop (even if you own Hogwarts Legacy on Steam)
 2. OpenVr - for SteamVR
 
@@ -215,39 +219,48 @@ Based on how you connect your HMD to your PC
 
 4️⃣
 Not in 1st person?  
-See [Profile Configuration Options](#profile-configuration-options)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See [Profile Configuration Options](#profile-configuration-options)
 
 <br>
 
 5️⃣
 Motion controls not working?
 
-Some menus do not have motion controls (yet).  
-Instead, use the analog-stick on the left controller to move the cursor.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Some menus do not have motion controls (yet).  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Instead, use the analog-stick on the left controller to move the cursor.
 
-For Valve Index controllers, you need this  
-https://github.com/mark-mon/uevr-index-controls
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For Valve Index controllers, you need this  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://github.com/mark-mon/uevr-index-controls
 
-If your copy of Hogwarts Legacy is from the Epic Games Store, then see the [Epic Games Store](#epic-games-store) section.  
-You need to remove a file from the game directory.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If your copy of Hogwarts Legacy is from the Epic Games Store, then see the [Epic Games Store](#epic-games-store) section.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You need to remove a file from the game directory.
 
 <br>
 
 6️⃣
 I'm moving in the wrong direction! Help!  
-Change your locomotion mode in the [Profile Configuration Options](#profile-configuration-options)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Change your locomotion mode in the [Profile Configuration Options](#profile-configuration-options)
 
 <br>
 
 7️⃣
-Why is the [B] button not going back in menus?  
-Why is the [X] button dodging and not interacting?  
-See [Swapped B and X buttons](#swapped-b-and-x-buttons)
+My spells go in a different direction than where I am pointing!  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Like this? https://www.youtube.com/watch?v=42K68ElOtok  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'Camera-relative targeting' needs to be set to ON.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This is in the Hogwarts game settings. Not in UEVR settings.
 
 <br>
 
 8️⃣
-Cracked/pirated versions of the game do not work!
+Why is the [B] button not going back in menus?  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Why is the [X] button dodging and not interacting?  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See [Swapped B and X buttons](#swapped-b-and-x-buttons)
+
+<br>
+
+9️⃣
+Cracked/pirated versions of the game do not work! 🏴‍☠️🚫
 
 ## Performance
 
