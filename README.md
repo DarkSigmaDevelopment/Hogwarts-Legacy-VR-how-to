@@ -27,22 +27,18 @@ You should also have already played some of Hogwarts Legacy without VR and be fa
 <br>
 
 UEVR is a tool that injects VR support into Unreal Engine games that do not have it natively.
-
-UEVR website <https://uevr.io>
-
-UEVR Github <https://github.com/praydog/UEVR>
+* UEVR website <https://uevr.io>
+* UEVR Github <https://github.com/praydog/UEVR>
 
 To use this directly, see instructions here --> [Praydog's injector + Nexus Mods](standard-injector-instructions.md)
 
 <br>
 
-"Unreal Easy Injector" (previously known as UEVR Deluxe) is a tool derived from UEVR that simplifies the process of setting up UEVR by providing profiles for specific games and presenting a cleaner/simplified user interface.
+"Unreal Easy Injector" (previously known as UEVR Deluxe) is a tool derived from UEVR that simplifies the process of setting up UEVR by providing profiles for specific games and presenting a cleaner, simplified user interface.
+* Unreal Easy Injector website <https://uevrdeluxe.org>
+* Unreal Easy Injector GitHub <https://github.com/oduis/UEVRDeluxe>
 
-Unreal Easy Injector website <https://uevrdeluxe.org>
-
-Unreal Easy Injector GitHub <https://github.com/oduis/UEVRDeluxe>
-
-To use this method, read on.
+To use this method (recommended), read on.
 
 ### Installing Unreal Easy Injector
 
@@ -52,7 +48,7 @@ Go to the [website](https://uevrdeluxe.org) and click on "Download latest releas
 
 <br>
 
-Clicking this link will take you to the GitHub release page.  
+Clicking that link will take you to the GitHub release page.  
 After the release notes, under "Assets", click on the **UEVREasyInjector.exe** to download it.
 
 Take the latest version. This screenshot might be outdated.
@@ -95,7 +91,7 @@ Press "Search profile"
 
 <br>
 
-Select the 1<sup>st</sup> Person profile created by Pande4360, jbusfield, DJ  
+Select the latest 1<sup>st</sup> Person profile created by Pande4360, jbusfield, DJ  
 Then press "Install"
 
 ![](images/05-uevr-easy-profile-selection-and-install.png)
@@ -116,43 +112,54 @@ Also see [Profile Configuration Options](#profile-configuration-options) for add
 
 Connect your VR HMD (head mounted display) to your PC.
 
-I have Meta Quest 3, using Virtual Desktop – a paid, wireless option.
+UEVR and the PJD profile should work with any headset.  
+But there have been issues reported on the [Flat2VR Discord](https://discord.com/channels/747967102895390741/1363692053229207792) with certain HMDs.
 
-If you do too, be sure to set the OpenXR Runtime to **VDXR** in the Virtual Desktop Streamer app on your PC.  
-And also ensure that Open**X**R is selected in UEVR Easy Injector under "How is your VR headset connected to the PC?"
+Ensure that Open**X**R is selected in UEVR Easy Injector under "How is your VR headset connected to the PC?".
 
-_Even if you own Hogwarts Legacy on Steam._
-
-This is important for the VR injection to work.
-
-![](images/06-virtual-desktop-options.png)
 ![](images/07.1-uevr-easy-openxr-for-vd.png)
 
-<br>
-
-If instead you use Meta Link (wired) or Meta Air Link (wireless), that's fine too.  
-For these optionals also, ensure that Open**X**R is selected in UEVR Easy Injector under "How is your VR headset connected to the PC?".
-
-<ins>However, if you use SteamLink with SteamVR, then you must choose "Open**V**R, linking via SteamVR"</ins>  
-The difference is in that one letter: the "V" instead of the "X".
-
-![](images/07-uevr-easy-openvr-for-steam.png)
+DO NOT choose OpenVR unless you have a Valve Index, or other HMD that _only_ works with SteamVR.  
+Even if your HMD _can_ work with OpenVR, OpenXR is newer and will provide the best performance.
 
 <br>
 
-| VR HMD to PC connection | Set Runtime to | Note                                                                                                       |
-|-------------------------|----------------|------------------------------------------------------------------------------------------------------------|
-| Meta Link (USB)         | OpenXR         | Even if you own Hogwarts Legacy on Steam                                                                   |
-| Meta Air Link           | OpenXR         | Even if you own Hogwarts Legacy on Steam                                                                   |
-| Virtual Desktop         | OpenXR         | Also set **VDXR** in the Virtual Desktop Streamer app on your PC. Even if you own Hogwarts Legacy on Steam |
-| SteamLink               | OpenVR         | With a "V", not an "X"                                                                                     |
+If Meta Quest as your HMD, then there are a few software options for connecting to your PC
 
-There is no need to use SteamVR if you are already connected to your PC with Virtual Desktop or Meta Link or Air Link.
+| Method                                                                                | Type          | Cost | OpenXR Runtime | Notes                                                                                                           |
+|---------------------------------------------------------------------------------------|---------------|------|----------------|-----------------------------------------------------------------------------------------------------------------|
+| Meta Link                                                                             | Wired 🔌      | Free | Meta           | Wire sold separately. The charging cable that comes with the Quest does not have sufficient data transfer rate. |
+| Meta Air Link                                                                         | Wireless only | Free | Meta           | Unpopular, but built in, with official Meta support.                                                            |
+| [Virtual Desktop](https://www.meta.com/experiences/virtual-desktop/2017050365004772/) | Wireless only | $25  | VDXR           | Widely regarded as the best option for performance, quality, and stability.                                     |
+| Steam Link                                                                            | Wireless only | Free | SteamVR        | Requires SteamVR to run.                                                                                        |
+| ALVR                                                                                  | Wireless only | Free |                | Open source, for tinkerers.                                                                                     |
 
 <br>
 
-If you have another HMD that's not Quest, it should also work.  
-But I have no experience with it.
+Whichever software you choose, you must use it to set the OpenXR runtime of your system to the one provided by that software.
+
+For example, with Virtual Desktop, be sure to set the OpenXR Runtime to **VDXR** in the Virtual Desktop Streamer app on your PC.  
+DO NOT leave it on Automatic.
+
+![](images/06-virtual-desktop-options.png)
+
+If instead you are using Meta Link or Meta Air Link, be sure to set Meta Quest Link as the active OpenXR Runtime.
+
+![](images/06.1-meta-openxr-runtime.png)
+
+If instead you are using Steam Link, be sure to set SteamVR as the active OpenXR Runtime.
+
+![](images/06.2-steamvr-openxr-runtime.png)
+
+<br>
+
+These software options are mutually exclusive.  
+DO NOT run more than one of these at the same time.
+
+Only Steam Link needs SteamVR to run.  
+If you're using Virtual Desktop, do not run SteamVR.  
+If you're using Meta, do not run SteamVR.  
+_Even if you own Hogwarts Legacy on Steam._
 
 ### Injecting
 
@@ -172,7 +179,8 @@ There might be a few seconds of darkness. Be patient. But then you will be immer
 
 <br>
 
-Use the left thumb-stick to move the curser and select your character with the [A] button on your right controller.
+Move your right controller to move the curser and select your character with the [A] button on your right controller.
+(you can turn off "cursor follows controller" in [hogwarts config](#profile-configuration-options))
 
 If you are starting a new game, there is a rollercoaster at Gringotts early on.  
 While this is super cool to experience in VR, it is also known to crash the game.  
@@ -210,10 +218,8 @@ Turn off **HAGS** (Hardware Accelerated GPU Scheduling) in Windows settings and 
 <br>
 
 3️⃣
-Did you forget to set the proper runtime in UEVR Easy Injector?  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Based on how you connect your HMD to your PC
-1. OpenXr - for Meta Link, Virtual Desktop (even if you own Hogwarts Legacy on Steam)
-2. OpenVr - for SteamVR
+Did you forget to set OpenXR in UEVR Easy Injector and set the proper runtime?  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Review [Connect your VR Headset](#connect-your-vr-headset)
 
 <br>
 
@@ -262,6 +268,12 @@ Why is the [B] button not going back in menus?
 9️⃣
 Cracked/pirated versions of the game do not work! 🏴‍☠️🚫
 
+🔟
+My hands and wand keep getting disconnected from the controllers.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unfortunately, this happens because of a flaw in UEVR, not the profile. It has been investigated and [confirmed](https://discord.com/channels/747967102895390741/1363692053229207792/1404595131780431964) by the profile creator.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You must use the profile's built-in workaround of ["grabbing your right ear"](#wand)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The detachment occurs more frequently within Hogwarts castle.
+
 ## Performance
 
 Game is very laggy?
@@ -274,7 +286,7 @@ Turn graphics preset down to Low
 
 Try DLSS on and see if it helps
 
-If the in-game settings don't get you a frame-rate that you find acceptable, then lower the resolution and/or bit-rate in the settings of your PC link software (Virtual Desktop, Meta Link, SteamVR, etc.)  
+If the in-game settings don't get you a frame-rate that you find acceptable, then lower the resolution, framerate, and/or bit-rate in the settings of your PC link software (Virtual Desktop, Meta Link, SteamVR, etc.)  
 A restart of the game is likely required
 
 Remember, this game was not meant to run in VR. It is not optimized for it at all. It's already hardware intensive when flat 4K at 60 fps, and we're shoving VR down its throat. That means everything is rendered twice, once for each eye's perspective, at higher resolutions and higher frame-rate.
@@ -354,7 +366,7 @@ And [Swapped \[B\] and \[X\] buttons](#swapped-B-and-X-buttons)
 
 #### Glyph Gestures
 
-Starting in PJD profile version 1.08, there is a "Hogwarts Configuration" tab in the [UEVR settings](#open-uevr-settings-in-game) when showing advanced settings.  
+Starting in PJD profile version 1.08, there is a "Hogwarts Config" tab in the [UEVR settings](#open-uevr-settings-in-game) when showing advanced settings.  
 See [Profile Configuration Options](#profile-configuration-options)  
 Go there to enable spell-casting using gestures.
 
@@ -383,7 +395,7 @@ Tips from [profile author 'jbusfield' — 2025-03-05](https://discord.com/channe
 
 <br>
 
-In profiles before version 1.08, for Glyph Gestures to be enable each tine you start the game and inject, you must edit a file in the profile.  
+In profiles before version 1.08, for Glyph Gestures to be enabled each time you start the game and inject, you must edit a file in the profile.  
 `%appdata%\UnrealVRMod\HogwartsLegacy\plugins\ue4ss\Mods\VRFP\scripts\config.lua`
 ```lua
 --[[
@@ -407,7 +419,7 @@ Rename it or move it to another folder.
 
 ### Profile Configuration Options
 
-Starting in PJD profile version 1.08, there is a "Hogwarts Configuration" tab in the [UEVR settings](#open-uevr-settings-in-game) when showing advanced settings.
+Starting in PJD profile version 1.08, there is a "Hogwarts Config" tab in the [UEVR settings](#open-uevr-settings-in-game) when showing advanced settings.
 
 ![](images/14-uevr-settings-profile-settings-UI.png)
 
@@ -456,7 +468,7 @@ Left controller "system" button opens the menu.
 Hold for a second and release to open the map.
 
 Starting in PJD profile version 1.08, some menus can have the cursor move with motion control.  
-Enable it in the "Hogwarts Configuration" tab of [UEVR settings](#open-uevr-settings-in-game)  
+Enable it in the "Hogwarts Config" tab of [UEVR settings](#open-uevr-settings-in-game)  
 See [Profile Configuration Options](#profile-configuration-options)
 
 Other menus, and in previous profile versions, the cursor is controlled with the analog-stick. Not motion control.
@@ -541,7 +553,7 @@ At the top-left of the floating settings window, check the "Show Advanced Option
 
 Open UEVR settings
 
-Starting in PJD profile version 1.08, there is a "Hogwarts Configuration" tab with the option "Attach UI to View".  
+Starting in PJD profile version 1.08, there is a "Hogwarts Config" tab with the option "Attach UI to View".  
 See [Profile Configuration Options](#profile-configuration-options)
 
 For previous versions, go to the "Runtime" tab and enable "UI Follows View".

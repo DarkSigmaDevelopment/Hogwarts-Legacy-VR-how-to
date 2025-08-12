@@ -1,20 +1,15 @@
 # Praydog's UEVR + Nexus Mods
 
-Download the latest stable release of UEVR
-https://github.com/praydog/UEVR/releases/latest/download/UEVR.zip
+Download the latest **nightly** release of UEVR  
+https://github.com/praydog/UEVR-nightly/releases/latest/download/UEVR.zip  
 
-(all releases https://github.com/praydog/UEVR/releases)
+(past nightly builds https://github.com/praydog/UEVR-nightly/releases/)
 
 Extract that to a nice, safe spot.
 
 Run "UEVRInjector.exe"
 
-Press "Open Global Dir"
-
-![](images/standard-injector/01.0-uevr-open-global-dir.png)
-
-This will open your file explorer to the UEVR profiles directory.  
-`C:\Users\*****\AppData\Roaming\UnrealVRMod`
+<br>
 
 Now go to Nexus Mods and download the profile you want to use.
 
@@ -22,42 +17,40 @@ UEVR Profile 6DOF for Hogwarts Legacy
 created by Pande4360, jbusfield, DJ  
 https://www.nexusmods.com/hogwartslegacy/mods/2264
 
-Direct link to the profile zip uploaded on `14 Feb 2025, 9:14AM`  
-https://www.nexusmods.com/hogwartslegacy/mods/2264?tab=files&file_id=7249
+Direct link to the latest profile zip 
+https://www.nexusmods.com/hogwartslegacy/mods/2264?tab=files&file_id=7344
 
-From that zip, extract the top-level `HogwartsLegacy` folder into the UEVR profiles directory.  
-So that inside `UnrealVRMod` you have `HogwartsLegacy`.
+<br>
+
+In the UEVR window, press "Import Config" and select the downloaded zip file. 
+
+![](images/standard-injector/01.0-uevr-import-config.png)
+
+A file explorer window will open to `C:\Users\*****\AppData\Roaming\UnrealVRMod\HogwartsLegacy\`, showing the extracted contents.  
+You can close that window.
 
 You're all set up with the profile.
 
 <br>
 
-Now run Hogwarts Legacy as you would normally and load into your save game.
+Now start the Hogwarts Legacy game as you would normally and load into your save game.
 
-Tab out of the game (Alt+Tab) so you can access the UEVR window.
+Tab out of the game (`Alt + Tab`) so you can access the UEVR window.
 
-Click the processes dropdown and select `HogwartsLegacy-Win64-Shipping.exe`
+Click the processes dropdown and select `HogwartsLegacy`
 
 ![](images/standard-injector/02.0-uevr-processes-dropdown.png)
 
 <br>
 
-Set the VR runtime, depending on how you connect your HMD to your PC:
-
-| VR HMD to PC connection | Set Runtime to | Note |
-|---|---|---|
-| Meta Link (USB) | OpenXR |Even if you own Hogwarts Legacy on Steam |
-| Meta Air Link | OpenXR | Even if you own Hogwarts Legacy on Steam |
-| Virtual Desktop | OpenXR | Also set **VDXR** in the Virtual Desktop Streamer app on your PC. Even if you own Hogwarts Legacy on Steam |
-| SteamLink | OpenVR | With a "V", not an "X" |
+Set the VR runtime to OpenXR
 
 ![](images/standard-injector/03.0-uevr-select-runtime.png)
 
-There is no need to use SteamVR if you use Virtual Desktop or Meta Link or any other connection method.
-
 <br>
 
-If you haven't already, connect your VR HMD to your PC.
+Connect your VR HMD to your PC.  
+(Virtual Desktop, Meta Link, SteamLink, etc.)
 
 Now press Inject in UEVR.
 
