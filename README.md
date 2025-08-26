@@ -230,7 +230,7 @@ Not in 1st person?
 <br>
 
 5️⃣
-Motion controls not working?
+Motion controls or buttons not working?
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Some menus do not have motion controls (yet).  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Instead, use the analog-stick on the left controller to move the cursor.
@@ -408,12 +408,12 @@ gestureMode = 1
 
 #### Epic Games Store
 
-If your installation of Hogwarts Legacy is from the Epic Games Store, then motion controls might not work at first.
+If your installation of Hogwarts Legacy is from the Epic Games Store, then motion controls or some buttons might not work at first.
 
-A suggested fix is to remove the file  
+To fix this, remove the file  
 "C:\Program Files\Epic Games\Hogwarts Legacy\Phoenix\Binaries\Win64\EOSSDK-Win64-Shipping.dll"
 
-Rename it or move it to another folder.
+Either rename it or move it to another folder.
 
 ⚠ WARNING: without this file, you may experience issues connecting to your WB Games account and installing official mods.
 
