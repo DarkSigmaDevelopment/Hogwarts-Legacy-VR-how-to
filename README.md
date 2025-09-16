@@ -11,10 +11,8 @@ Join the **Flat2VR Discord**
 ## Setup
 
 We will be using UEVR to make _Hogwarts Legacy_ run in VR.  
-We will also use a profile that allows for 1st person perspective, a motion controlled wand, and casting spells by drawing glyphs in the air.  
-You can also still use an Xbox controller and toggle into 3rd person.
-
-[(_super quick instructions_)](super-quick-instructions.md)
+We will also use a profile that allows for 1st person perspective, a motion-controlled wand, and (optionally) casting spells by drawing glyphs in the air.
+You can also still use an [Xbox controller](#disable-motion-controls) and toggle into [3rd person](#profile-configuration-options).
 
 This guide assumes you understand how to
 1. Download programs and files from the internet
@@ -39,6 +37,8 @@ To use this directly, see instructions here --> [Praydog's injector + Nexus Mods
 * Unreal Easy Injector GitHub <https://github.com/oduis/UEVRDeluxe>
 
 To use this method (recommended), read on.
+
+[(_super quick instructions_)](super-quick-instructions.md)
 
 ### Installing Unreal Easy Injector
 
@@ -208,7 +208,8 @@ Nothing's happening? 😭
 
 1️⃣
 If HMD shows a black screen and everything freezes, then **turn off Frame Generation** in the game's settings.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This is _not_ the same as "space warp"/SSW/ASW.
+![](images/frame-generation.png)  
+This is _not_ the same as re-projection/space-warp/SSW/ASW that is done by the VR renderer.  
 
 <br>
 
@@ -268,11 +269,23 @@ Why is the [B] button not going back in menus?
 9️⃣
 Cracked/pirated versions of the game do not work! 🏴‍☠️🚫
 
+<br>
+
 🔟
 My hands and wand keep getting disconnected from the controllers.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unfortunately, this happens because of a flaw in UEVR, not the profile. It has been investigated and [confirmed](https://discord.com/channels/747967102895390741/1363692053229207792/1404595131780431964) by the profile creator.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You must use the profile's built-in workaround of ["grabbing your right ear"](#wand)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The detachment occurs more frequently within Hogwarts castle.
+
+<br>
+
+1️⃣1️⃣
+You need to be using the **Nightly** version of UEVR. At least version 1096. But the latest nightly is probably also good.  
+Easy Injector has an easy button to upgrade to the latest version. Or change to any specific version.  
+![](images/08.1-uevr-easy-upgrade-button.png)  
+If instead you are using the standard UEVR executable, then you need to download the Nightly build from GitHub https://github.com/praydog/UEVR-nightly/releases/  
+The PJD profile does not work on the release version 1.05  
+Do not ask how you can see which version you have, because it's not straightforward. Just get the Nightly.
 
 ## Performance
 
@@ -559,6 +572,22 @@ See [Profile Configuration Options](#profile-configuration-options)
 For previous versions, go to the "Runtime" tab and enable "UI Follows View".
 
 ![](images/12-uevr-settings-ui-follows-view.png)
+
+### Disable motion-controls
+You want to use an Xbox controller only.  
+Not VR motion-controls.
+
+Then you do not need the PJD profile.  
+Most of the scripts are for making motion-controls work.  
+UEVR injection works out-of-the-box to put your head where the camera is, and you play with you Xbox controller or keyboard and mouse.  
+You do not need to download profiles. This is true for any game.
+
+If you're using the PJD profile because you want a 1st person view, then you need this separate version of the profile to disable the motion-controls.  
+Forked from v1.08a by [BlueScorpio](https://discord.com/channels/747967102895390741/1363692053229207792/1397891528776617995)  
+Get it here: https://github.com/pdebaty/HL_UEVR_no_controllers
+
+Alternatively, you can get 1st person mods from Nexus Mods or CurseForge and other places.  
+Mods that are unrelated to VR, but will still work with UEVR.
 
 ### UEVR links
 
