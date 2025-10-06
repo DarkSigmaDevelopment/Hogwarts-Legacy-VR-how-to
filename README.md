@@ -287,6 +287,11 @@ If instead you are using the standard UEVR executable, then you need to download
 The PJD profile does not work on the release version 1.05  
 Do not ask how you can see which version you have, because it's not straightforward. Just get the Nightly.
 
+1️⃣2️⃣
+For PSVR2 users, you might need to adjust Steam Input bindings to make the system/menu button work.  
+See this YouTube video https://www.youtube.com/watch?app=desktop&v=hIOpeIlQwl8&t=770s  
+And see the section of this guide on the multiple [D-pad shifting modes](#d-pad)
+
 ## Performance
 
 Game is very laggy?
