@@ -194,103 +194,71 @@ If the `Ctrl + Alt + U` keyboard shortcut is not working, or you just don't want
 
 ## Troubleshooting
 
-0️⃣
-Nothing's happening? 😭  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dont worry.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use `Alt + Tab` to focus the Easy Injector window.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Press "Stop Game".  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Then "Start / Inject game" again.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Should work the 2<sup>nd</sup> time.  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; But this should be fixed in version `1.7.2.0+` of UEVR Easy Injector.
-
-<br>
-
-1️⃣
-If HMD shows a black screen and everything freezes, then **turn off Frame Generation** in the game's settings.  
-![](images/frame-generation.png)  
-This is _not_ the same as re-projection/space-warp/SSW/ASW that is done by the VR renderer.  
-
-<br>
-
-2️⃣
-Turn off **HAGS** (Hardware Accelerated GPU Scheduling) in Windows settings and restart your computer.
-
-<br>
-
-3️⃣
-Did you forget to set OpenXR in UEVR Easy Injector and set the proper runtime?  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Review [Connect your VR Headset](#connect-your-vr-headset)
-
-<br>
-
-4️⃣
-Not in 1st person?  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See [Profile Configuration Options](#profile-configuration-options)
-
-<br>
-
-5️⃣
-Motion controls or buttons not working?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Some menus do not have motion controls (yet).  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Instead, use the analog-stick on the left controller to move the cursor.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For Valve Index controllers, you need this  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://github.com/mark-mon/uevr-index-controls
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If your copy of Hogwarts Legacy is from the Epic Games Store, then see the [Epic Games Store](#epic-games-store) section.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You need to remove a file from the game directory.
-
-<br>
-
-6️⃣
-I'm moving in the wrong direction! Help!  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Change your locomotion mode in the [Profile Configuration Options](#profile-configuration-options)
-
-<br>
-
-7️⃣
-My spells go in a different direction than where I am pointing!  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Like this? https://www.youtube.com/watch?v=42K68ElOtok  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'Camera-relative targeting' needs to be set to ON.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This is in the Hogwarts game settings. Not in UEVR settings.
-
-<br>
-
-8️⃣
-Why is the [B] button not going back in menus?  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Why is the [X] button dodging and not interacting?  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See [Swapped B and X buttons](#swapped-b-and-x-buttons)
-
-<br>
-
-9️⃣
-Cracked/pirated versions of the game do not work! 🏴‍☠️🚫
-
-<br>
-
-🔟
-My hands and wand keep getting disconnected from the controllers.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unfortunately, this happens because of a flaw in UEVR, not the profile. It has been investigated and [confirmed](https://discord.com/channels/747967102895390741/1363692053229207792/1404595131780431964) by the profile creator.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You must use the profile's built-in workaround of ["grabbing your right ear"](#wand)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The detachment occurs more frequently within Hogwarts castle.
-
-<br>
-
-1️⃣1️⃣
-You need to be using the **Nightly** version of UEVR. At least version 1096. But the latest nightly is probably also good.  
-Easy Injector has an easy button to upgrade to the latest version. Or change to any specific version.  
-![](images/08.1-uevr-easy-upgrade-button.png)  
-If instead you are using the standard UEVR executable, then you need to download the Nightly build from GitHub https://github.com/praydog/UEVR-nightly/releases/  
-The PJD profile does not work on the release version 1.05  
-Do not ask how you can see which version you have, because it's not straightforward. Just get the Nightly.
-
-1️⃣2️⃣
-For PSVR2 users, you might need to adjust Steam Input bindings to make the system/menu button work.  
-See this YouTube video https://www.youtube.com/watch?app=desktop&v=hIOpeIlQwl8&t=770s  
-And see the section of this guide on the multiple [D-pad shifting modes](#d-pad)
+1. Nothing's happening? 😭  
+   Don't worry.  
+   Use `Alt + Tab` to focus the Easy Injector window.  
+   Press "Stop Game".  
+   Then "Start / Inject game" again.  
+   Should work the 2<sup>nd</sup> time.  
+   
+   But this should be fixed in version `1.7.2.0+` of UEVR Easy Injector.  
+   
+2. If HMD shows a black screen and everything freezes, then **turn off Frame Generation** in the game's settings.  
+   ![](images/frame-generation.png)  
+   This is _not_ the same as re-projection/space-warp/SSW/ASW that is done by the VR renderer.  
+   
+3. Turn off **HAGS** (Hardware Accelerated GPU Scheduling) in Windows settings and restart your computer.  
+   
+4. Did you forget to set OpenXR in UEVR Easy Injector and set the proper runtime?  
+   Review [Connect your VR Headset](#connect-your-vr-headset)  
+   
+5. Not in 1st person?  
+   See [Profile Configuration Options](#profile-configuration-options)  
+   
+6. Motion controls or buttons not working?  
+   Some menus do not have motion controls (yet).  
+   Instead, use the analog-stick on the left controller to move the cursor.  
+   
+   For Valve Index controllers, you need this  
+   https://github.com/mark-mon/uevr-index-controls  
+   
+   If your copy of Hogwarts Legacy is from the Epic Games Store, then see the [Epic Games Store](#epic-games-store) section.  
+   You need to remove a file from the game directory.  
+   
+7. I'm moving in the wrong direction! Help!    
+   Change your locomotion mode in the [Profile Configuration Options](#profile-configuration-options)  
+   
+8. My spells go in a different direction than where I am pointing!  
+   Like this? https://www.youtube.com/watch?v=42K68ElOtok  
+   
+   'Camera-relative targeting' needs to be set to ON.  
+   This is in the Hogwarts game settings. Not in UEVR settings.  
+   
+9. Why is the [B] button not going back in menus?  
+   Why is the [X] button dodging and not interacting?  
+   See [Swapped B and X buttons](#swapped-b-and-x-buttons)  
+   
+10. Cracked/pirated versions of the game do not work! 🏴‍☠️🚫  
+   
+11. My hands and wand keep getting disconnected from the controllers.  
+    Unfortunately, this happens because of a flaw in UEVR, not the profile. It has been investigated and [confirmed](https://discord.com/channels/747967102895390741/1363692053229207792/1404595131780431964) by the profile creator.  
+    You must use the profile's built-in workaround of ["grabbing your right ear"](#wand)  
+    The detachment occurs more frequently within Hogwarts castle.  
+   
+12. You need to be using the **Nightly** version of UEVR. At least version 1096. But the latest nightly is probably also good.  
+    Easy Injector has an easy button to upgrade to the latest version. Or change to any specific version.  
+    ![](images/08.1-uevr-easy-upgrade-button.png)  
+    If instead you are using the standard UEVR executable, then you need to download the Nightly build from GitHub https://github.com/praydog/UEVR-nightly/releases/  
+    The PJD profile does not work on the release version 1.05  
+    Do not ask how you can see which version you have, because it's not straightforward. Just get the Nightly.  
+    
+13. For PSVR2 users, you might need to adjust Steam Input bindings to make the system/menu button work.  
+    See this YouTube video https://www.youtube.com/watch?app=desktop&v=hIOpeIlQwl8&t=770s  
+    And see the section of this guide on the multiple [D-pad shifting modes](#d-pad)
+    
+14. There have been issues with Nvidia GPU drivers for many UEVR games.  
+    Crashing is the most commonly reported issue.  
+    It has been recommended to stay on, or downgrade to, v566
 
 ## Performance
 
