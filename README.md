@@ -1,14 +1,14 @@
 # A Guide to Hogwarts Legacy in VR
 
-Join the **Flat2VR Discord**
-1. [#ue-hogwarts](https://discord.com/channels/747967102895390741/1363692053229207792) (new channel 2025-04-20)
-2. [old thread](https://discord.com/channels/747967102895390741/1073648949057048628) under #ue-games
-
-> [!IMPORTANT]
-> Version 1.08a of the profile has been released (2025-06-17), bringing new features and performance improvements.  
-> This guide has been updated for the new configuration options, and also retains instructions for the older profiles.
+Join the **[Flat2VR Discord](https://flat2vr.com)**
+1. Press "Join channels" in [#ue-join](https://discord.com/channels/747967102895390741/1062011861354164314) to reveal the Unreal Engine category of channels
+2. Then, come chat in [#ue-hogwarts](https://discord.com/channels/747967102895390741/1363692053229207792)
 
 ## Setup
+
+> [!IMPORTANT]  
+> Epic Games Store versions of Hogwarts Legacy  
+> Controllers will not work until you do this: [Epic Games Store](#epic-games-store).
 
 We will be using UEVR to make _Hogwarts Legacy_ run in VR.  
 We will also use a profile that allows for 1st person perspective, a motion-controlled wand, and (optionally) casting spells by drawing glyphs in the air.
@@ -96,8 +96,7 @@ Then press "Install"
 
 ![](images/05-uevr-easy-profile-selection-and-install.png)
 
-This profile is created by Pande4360, jbusfield, DJ  
-and is therefore called the PJD profile.  
+This profile is created by Discord users Pande4360, jbusfield, and DJ
 It can also be downloaded from Nexus Mods  
 https://www.nexusmods.com/hogwartslegacy/mods/2264  
 Or GitHub  
@@ -108,11 +107,13 @@ It will be in 3rd person, controlled by your Xbox controller, or keyboard and mo
 If you want to play in 1st person with motion controls, then you need this profile.  
 Also see [Profile Configuration Options](#profile-configuration-options) for additional settings you can change provided by this profile.
 
+If you want to play in 1st person with an Xbox controller, without motion controls, then see the section [Disable Motion Controls](#disable-motion-controls).
+
 ### Connect your VR headset
 
 Connect your VR HMD (head mounted display) to your PC.
 
-UEVR and the PJD profile should work with any headset.  
+UEVR and the profile should work with any headset.  
 But there have been issues reported on the [Flat2VR Discord](https://discord.com/channels/747967102895390741/1363692053229207792) with certain HMDs.
 
 Ensure that Open**X**R is selected in UEVR Easy Injector under "How is your VR headset connected to the PC?".
@@ -180,7 +181,7 @@ There might be a few seconds of darkness. Be patient. But then you will be immer
 <br>
 
 Move your right controller to move the curser and select your character with the [A] button on your right controller.
-(you can turn off "cursor follows controller" in [hogwarts config](#profile-configuration-options))
+(you can turn off "cursor follows controller" in [Hogwarts Config](#profile-configuration-options))
 
 If you are starting a new game, there is a rollercoaster at Gringotts early on.  
 While this is super cool to experience in VR, it is also known to crash the game.  
@@ -192,20 +193,18 @@ If the `Ctrl + Alt + U` keyboard shortcut is not working, or you just don't want
 
 ![](images/08-uevr-easy-inject-button.png)
 
+Change profile configuration options in the [Hogwarts Config](#profile-configuration-options) tab of the UEVR settings menu.
+
 ## Troubleshooting
 
-1. Nothing's happening? 😭  
-   Don't worry.  
-   Use `Alt + Tab` to focus the Easy Injector window.  
-   Press "Stop Game".  
-   Then "Start / Inject game" again.  
-   Should work the 2<sup>nd</sup> time.  
-   
-   But this should be fixed in version `1.7.2.0+` of UEVR Easy Injector.  
-   
+1. I can't move! 😭  
+   * Close the UEVR menu, not just collapse it. Click the X, or press Insert on keyboard, or press in both controller thumb-sticks.
+   * [Epic Games Store](#epic-games-store)
+   * Valve Index controllers https://github.com/mark-mon/uevr-index-controls
+
 2. If HMD shows a black screen and everything freezes, then **turn off Frame Generation** in the game's settings.  
-   ![](images/frame-generation.png)  
    This is _not_ the same as re-projection/space-warp/SSW/ASW that is done by the VR renderer.  
+   ![](images/frame-generation.png)  
    
 3. Turn off **HAGS** (Hardware Accelerated GPU Scheduling) in Windows settings and restart your computer.  
    
@@ -215,67 +214,63 @@ If the `Ctrl + Alt + U` keyboard shortcut is not working, or you just don't want
 5. Not in 1st person?  
    See [Profile Configuration Options](#profile-configuration-options)  
    
-6. Motion controls or buttons not working?  
-   Some menus do not have motion controls (yet).  
-   Instead, use the analog-stick on the left controller to move the cursor.  
-   
-   For Valve Index controllers, you need this  
-   https://github.com/mark-mon/uevr-index-controls  
-   
-   If your copy of Hogwarts Legacy is from the Epic Games Store, then see the [Epic Games Store](#epic-games-store) section.  
-   You need to remove a file from the game directory.  
-   
-7. I'm moving in the wrong direction! Help!    
+6. I'm moving in the wrong direction! Help!    
    Change your locomotion mode in the [Profile Configuration Options](#profile-configuration-options)  
    
-8. My spells go in a different direction than where I am pointing!  
+7. My spells go in a different direction than where I am pointing!  
    Like this? https://www.youtube.com/watch?v=42K68ElOtok  
    
    'Camera-relative targeting' needs to be set to ON.  
    This is in the Hogwarts game settings. Not in UEVR settings.  
    
-9. Why is the [B] button not going back in menus?  
+8. Why is the [B] button not going back in menus?  
    Why is the [X] button dodging and not interacting?  
    See [Swapped B and X buttons](#swapped-b-and-x-buttons)  
    
-10. Cracked/pirated versions of the game do not work! 🏴‍☠️🚫  
+9. Cracked/pirated versions of the game do not work! 🏴‍☠️🚫  
    
-11. My hands and wand keep getting disconnected from the controllers.  
+10. My hands and wand keep getting disconnected from the controllers.  
     Unfortunately, this happens because of a flaw in UEVR, not the profile. It has been investigated and [confirmed](https://discord.com/channels/747967102895390741/1363692053229207792/1404595131780431964) by the profile creator.  
     You must use the profile's built-in workaround of ["grabbing your right ear"](#wand)  
     The detachment occurs more frequently within Hogwarts castle.  
    
-12. You need to be using the **Nightly** version of UEVR. At least version 1096. But the latest nightly is probably also good.  
+11. You need to be using the **Nightly** version of UEVR. At least version 1096. But the latest nightly is probably also good.  
     Easy Injector has an easy button to upgrade to the latest version. Or change to any specific version.  
     ![](images/08.1-uevr-easy-upgrade-button.png)  
     If instead you are using the standard UEVR executable, then you need to download the Nightly build from GitHub https://github.com/praydog/UEVR-nightly/releases/  
-    The PJD profile does not work on the release version 1.05  
+    The profile does not work on the release version 1.05  
     Do not ask how you can see which version you have, because it's not straightforward. Just get the Nightly.  
     
-13. For PSVR2 users, you might need to adjust Steam Input bindings to make the system/menu button work.  
+12. For PSVR2 users, you might need to adjust Steam Input bindings to make the system/menu button work.  
     See this YouTube video https://www.youtube.com/watch?app=desktop&v=hIOpeIlQwl8&t=770s  
     And see the section of this guide on the multiple [D-pad shifting modes](#d-pad)
     
-14. There have been issues with Nvidia GPU drivers for many UEVR games.  
+13. There have been issues with Nvidia GPU drivers for many UEVR games.  
     Crashing is the most commonly reported issue.  
     It has been recommended to stay on, or downgrade to, v566
 
 ## Performance
 
-Game is very laggy?
-
-There are lots of settings to play with
-
-Turn off ray-tracing
-
-Turn graphics preset down to Low
-
-Try DLSS on and see if it helps
+In-game settings
+1. Turn off ray-tracing
+2. Turn graphics preset down to Low
+3. Turn on DLSS upscaling to Performance mode
 
 If the in-game settings don't get you a frame-rate that you find acceptable, then lower the resolution, framerate, and/or bit-rate in the settings of your PC link software (Virtual Desktop, Meta Link, SteamVR, etc.)  
 A restart of the game is likely required
 
 Remember, this game was not meant to run in VR. It is not optimized for it at all. It's already hardware intensive when flat 4K at 60 fps, and we're shoving VR down its throat. That means everything is rendered twice, once for each eye's perspective, at higher resolutions and higher frame-rate.
+
+## Epic Games Store
+
+If your installation of Hogwarts Legacy is from the Epic Games Store, then motion controls or some buttons might not work at first.
+
+To fix this, remove the file  
+"C:\Program Files\Epic Games\Hogwarts Legacy\Phoenix\Binaries\Win64\EOSSDK-Win64-Shipping.dll"
+
+Either rename it or move it to another folder.
+
+⚠ WARNING: without this file, you may experience issues connecting to your WB Games account and installing official mods.
 
 ## Controls
 
@@ -327,13 +322,14 @@ What the d-pad does is the same as in the flat game (non-VR)
 
 ### Wand
 
-Move your right hand and the wand moves (motion controlled)
+Move your right hand, and the wand moves (motion controlled)
 
 Can't see it? Try pressing the trigger to cast a spell.  
 If it gets detached from your controller and stuck in the world, then just "grab your right ear": hold the right controller up to your right ear near  your HMD and press the grip button.  
 If it still doesn't appear, you may need to restart the game.
 
-Cast other spells by holding the trigger and moving the analog-stick up/down/left/right to cast the corresponding spell as seen on the HUD. This is a special feature of this PJD profile.  
+Cast other spells by holding the trigger and moving the analog-stick up/down/left/right to cast the corresponding spell as seen on the HUD.  
+This is a special feature of this profile when enhanced controller mode is on in the [Hogwarts Config](#profile-configuration-options) tab.  
 The buttons [A] [B] [X] [Y] also work to cast spells, just like in flat mode (non-VR).
 
 To **open chests** or collect **field guide pages** or otherwise interact with things, point the wand at it and press [B] on you right-hand Quest controller.  
@@ -344,19 +340,17 @@ It is known that the floating prompt moves in the inverse direction that you mov
 The [B] button of your right-hand Quest controller acts as an Xbox controller's [X] button.  
 And the [X] button of your left-hand Quest controller acts as an Xbox controller's [B] button.  
 B and X are swapped.  
-This is the default mapping of UEVR. Not specific to the PJD profile.
+This is the default mapping of UEVR. Not specific to the profile.
 
 Wondering how you can dodge (press X) while moving?  
 See [Jump and Dodge](#jump-and-dodge)  
 And [Swapped \[B\] and \[X\] buttons](#swapped-B-and-X-buttons)
 
-#### Glyph Gestures
+### Glyph Gestures
 
-Starting in PJD profile version 1.08, there is a "Hogwarts Config" tab in the [UEVR settings](#open-uevr-settings-in-game) when showing advanced settings.  
+Go to the "Hogwarts Config" tab in the [UEVR settings](#open-uevr-settings-in-game) when showing advanced settings.  
 See [Profile Configuration Options](#profile-configuration-options)  
 Go there to enable spell-casting using gestures.
-
-In previous versions, Press F7 on your keyboard to enable spell-casting using gestures.
 
 Glyphs are shown in the game's spell management menu (d-pad right).  
 Hover the curser over a spell to see what glyph to draw to cast that spell.  
@@ -379,99 +373,29 @@ Tips from [profile author 'jbusfield' — 2025-03-05](https://discord.com/channe
 > If the drawing system does not detect that what you have drawn so far will result in a valid glyph, then it will stop detecting and vibrate your controller as you saw in your first attempt.  
 > Drawing direction goes from the thick end of the line to the thin end in the examples in the spell menu.
 
-<br>
-
-In profiles before version 1.08, for Glyph Gestures to be enabled each time you start the game and inject, you must edit a file in the profile.  
-`%appdata%\UnrealVRMod\HogwartsLegacy\plugins\ue4ss\Mods\VRFP\scripts\config.lua`
-```lua
---[[
-Gesture Mode
-0 = No gestures
-1 = Spells can be cast by drawing glyphs. Wrist flick casts previous spell
-]]--
-gestureMode = 1
-```
-
-#### Epic Games Store
-
-If your installation of Hogwarts Legacy is from the Epic Games Store, then motion controls or some buttons might not work at first.
-
-To fix this, remove the file  
-"C:\Program Files\Epic Games\Hogwarts Legacy\Phoenix\Binaries\Win64\EOSSDK-Win64-Shipping.dll"
-
-Either rename it or move it to another folder.
-
-⚠ WARNING: without this file, you may experience issues connecting to your WB Games account and installing official mods.
-
-### Profile Configuration Options
-
-Starting in PJD profile version 1.08, there is a "Hogwarts Config" tab in the [UEVR settings](#open-uevr-settings-in-game) when showing advanced settings.
-
-![](images/14-uevr-settings-profile-settings-UI.png)
-
-In previous versions, the PJD profile provided the following keyboard functions:  
-
-| Key | Function                                                                                                                                                                                                                                                                                                                          |
-|-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| F1  | Switch between 1st and 3rd person point of view.                                                                                                                                                                                                                                                                                  |
-| F2  | Switch between UEVR's Native Stereo and Synced Sequential rendering methods.                                                                                                                                                                                                                                                      |
-| F3  | Cycle through the player Locomotion (movement) modes: <br> 1. Follow wand/hand direction. <br> 2. Follow head direction. <br> 3. Only analog-stick controls direction. Smooth or snap-turn can be chosen in the [UEVR settings](#open-uevr-settings-in-game)                                                                      |
-| F4  | Toggle the game's Fog effect on/off.                                                                                                                                                                                                                                                                                              |
-| F5  | Toggle 2D screen.                                                                                                                                                                                                                                                                                                                 |
-| F6  | Enable/disable the use of the analog-stick for casting spells, when Gestures are disabled. <br> When enabled, hold the right trigger and push the right analog-stick in the cardinal direction of the spell slot as shown on the HUD. <br> When disabled, only the buttons [A] [B] [X] [Y] cast spells while holding the trigger. |
-| F7  | Enable/disable casting spells by drawing Glyphs in the air. <br> See the [Glyph Gestures](#glyph-gestures) section.                                                                                                                                                                                                               |
-| F8  | Toggle visibility of a circular aiming reticle that shows where your wand is pointing.                                                                                                                                                                                                                                            |
-| F9  | Switch between manual and auto Targeting.                                                                                                                                                                                                                                                                                         |
-
-These key presses are temporary changes. They will not persist between game sessions.  
-To persist your settings, so that they are used each time you start and inject, you must edit a file in the profile.  
-`%appdata%\UnrealVRMod\HogwartsLegacy\plugins\ue4ss\Mods\VRFP\scripts\config.lua`
- 
-<br>
-
-Adjust wand position relative to controller
-
-| Key            | Direction         |
-|----------------|-------------------|
-| numpad 8       | up (y-axis)       |
-| numpad 2       | down (y-axis)     |
-| alt + numpad 8 | forward (z-axis)  |
-| alt + numpad 2 | backward (z-axis) |
-| alt + numpad 4 | left (x-axis)     |
-| alt + numpad 2 | right (x-axis)    |
-
-Adjust wand rotation
-
-| Keys         | Axis           |
-|--------------|----------------|
-| numpad 7 / 9 | pitch (x-axis) |
-| numpad 4 / 6 | roll  (z-axis) |
-| numpad 1 / 3 | yaw   (y-axis) |
-
 ### Menu & Map
 
 Left controller "system" button opens the menu.  
 Hold for a second and release to open the map.
 
-Starting in PJD profile version 1.08, some menus can have the cursor move with motion control.  
+Most menus can have the cursor move with motion control.  
 Enable it in the "Hogwarts Config" tab of [UEVR settings](#open-uevr-settings-in-game)  
 See [Profile Configuration Options](#profile-configuration-options)
 
-Other menus, and in previous profile versions, the cursor is controlled with the analog-stick. Not motion control.
+For other menus, the cursor is controlled with the analog-stick. Not motion control.
 
 If using **SteamVR**, then the "system" button will bring up the SteamVR overlay/dashboard.  
-So you need to disable that in SteamVR settings.
-
-![](images/11.1-steamvr-settings-dashboard-on-system-button-off.png)
-
-For some reason, this option only appears in the desktop window, not in the VR dashboard.  
-Your HMD still needs to be connected. And show "Advanced Settings".
+This can be worked around by using voice commands, or a plugin that makes another button on your controller act as the system button.
+Easy Injector has a built-in voice commands feature. You need to set it up to press the keyboard key ESC (escape) for menu and [M] for map.
+UEVR plugin options are
+1. [UEVR Button & Gesture Mapper](https://discord.com/channels/747967102895390741/1396212532368244857) by elliotttate
+2. [Quest Controller DPad Shift enhancement](https://discord.com/channels/747967102895390741/1445673926389923970) by markmon  
+   When using the thumbrest for dpad shift, it additionally enables thumbrest + left A = menu, thumbrest + left B = map.
 
 ### Jump and Dodge
 
-With the PJD profile, pushing up on the right analog-stick will jump, and pushing down will dodge.
-
-If you still want to remap the [B] and [X] buttons, then read the next section.
+Move the right analog-stick up to jump.  
+Move the right analog-stick down to dodge.
 
 ### Swapped [B] and [X] buttons
 
@@ -517,12 +441,10 @@ To learn more, read [UEVR Bindings](uevr-bindings.md)
 
 <br>
 
-With the PJD profile, "up" on the right analog-stick will jump, and "down" will dodge.  
+With the profile, "up" on the right analog-stick will jump, and "down" will dodge.  
 So you don't have to remap the [B] and [X] buttons to dodge well, if you don't want to.
 
-## Miscellaneous
-
-### Open UEVR Settings In-Game
+## Open UEVR Settings In-Game
 
 Press both analog-sticks simultaneously.  
 Or press the "Insert" [INS] key on your keyboard.
@@ -531,45 +453,58 @@ Press again to close.
 
 If the menu does not appear before you, then it might be behind you or to the side.  
 Try turning your head to look around.  
-Or recenter your view. On Quest, do that by holding the Meta button.
+Or re-center your view. On Quest, do that by holding the Meta button.
 
 At the top-left of the floating settings window, check the "Show Advanced Options" checkbox to see even more things to fiddle with.
 
-### HUD following hand instead of head
+UEVR Tutorials https://www.youtube.com/watch?v=CW60zLLo2fw&list=PLyE0aREJRIBLMQREfAFXKSQydoI-h4Vfh
 
-Open UEVR settings
+## Profile Configuration Options
 
-Starting in PJD profile version 1.08, there is a "Hogwarts Config" tab with the option "Attach UI to View".  
-See [Profile Configuration Options](#profile-configuration-options)
+There is a "Hogwarts Config" tab in the [UEVR settings](#open-uevr-settings-in-game) when showing advanced settings.
 
-For previous versions, go to the "Runtime" tab and enable "UI Follows View".
+![](images/14-uevr-settings-profile-settings-UI.png)
 
-![](images/12-uevr-settings-ui-follows-view.png)
+| Option                    | Description                                                                                                                                                                                                                                                                                                                                                                                          |
+|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Locomotion Mode           | When moving with the left stick, should the character move in the direction that your head is facing, the direction that your wand hand is pointing, or not be affected by VR tracking at all and require the right stick to turn.                                                                                                                                                                   |
+| Target Mode               | Auto target = Spells go toward where you point. <br/>Manual target = you must lock on to an enemy or object by pressing in on the right thumb-stick and change targets by moving the right thumb-stick left and right.                                                                                                                                                                               |
+| Controller Mode           | When on "Enhanced", equiped spells can be cast with the right thumb-stick while the right trigger is held down.                                                                                                                                                                                                                                                                                      |
+| Gesture Mode              | Cast spells by drawing glyphs in the air. <br/>See [Glyph Gestures](#glyph-gestures)                                                                                                                                                                                                                                                                                                                 |
+| Manual Hide Wand          | When off, the wand will automaticaly disapear when not in use. <br/>When on, hold your wand down by your side and press grip to make it disapear. <br/>The wand will always come back when castiong a spell. <br/>If your wand and/or hands detach from your motion controllers, then "grab your right ear": hold the right controller up to your right ear near your HMD and press the grip button. |
+| First Person Cinematics   | Even with "First Person View" on, the cutscenes will still be in 3rd person, unless you have this option enabled too.                                                                                                                                                                                                                                                                                |
+| Enable Volumetric Fog     | The game has a lot of fog. Even inside the castle. Turn it off to see better and not have interior spaces look washed out.                                                                                                                                                                                                                                                                           |
+| Curson follows controller | On most pause menu screens, move your right controller to move the pointer, instead of needing to use the right thumb-stick.                                                                                                                                                                                                                                                                         |
+| Attach UI to View         | The HUD (mini-map, health, spells, quest markers, etc.) will stay in front of you when you turn your head.                                                                                                                                                                                                                                                                                           |
 
-### Disable motion-controls
-You want to use an Xbox controller only.  
-Not VR motion-controls.
 
-Then you do not need the PJD profile.  
+## Disable motion-controls
+If you want to use an Xbox controller only, not VR motion-controls, then you do not need the profile.  
 Most of the scripts are for making motion-controls work.  
-UEVR injection works out-of-the-box to put your head where the camera is, and you play with you Xbox controller or keyboard and mouse.  
+UEVR injection works out-of-the-box to put your head where the camera is, and you play with your Xbox controller or keyboard and mouse.  
 You do not need to download profiles. This is true for any game.
 
-If you're using the PJD profile because you want a 1st person view, then you need this separate version of the profile to disable the motion-controls.  
+If you're experiencing visual flickering, then
+1. Install the profile as instructed in [Setup](#setup).
+2. Open Windows File Explorer to `%appdata%\UnrealVRMod\HogwartsLegacy\scripts`
+3. Delete the file 'main.lua'
+4. Replace it with this file: [main_flicker_fixer.lua](main_flicker_fixer.lua)
+
+If you're using the profile because you want a 1st person view, then you need this separate version of the profile that adds an option to the [Hogwarts Config](#profile-configuration-options) to disable the motion-controls.  
 Forked from v1.08a by [BlueScorpio](https://discord.com/channels/747967102895390741/1363692053229207792/1397891528776617995)  
 Get it here: https://github.com/pdebaty/HL_UEVR_no_controllers
 
 Alternatively, you can get 1st person mods from Nexus Mods or CurseForge and other places.  
 Mods that are unrelated to VR, but will still work with UEVR.
 
-### UEVR links
+# Acknowledgements
+Thank you for reading this guide to Hogwarts Legacy in VR.  
+If this helped you, please give a shoutout in the Flat2VR Discord server.  
+Polite comments and critiques are also welcome.
 
-Praydog's site <https://uevr.io/>
-
-Release download <https://github.com/praydog/UEVR/releases/>
-
-Nightly builds <https://github.com/praydog/UEVR-nightly/releases>
-
-A "nightly build" is like a beta version. It includes whatever work was done on the source-code that day, even if it's broken or otherwise not ready for stable release. The advantage of using these is that some bugs might be fixed and some new features added. But don't complain if it doesn't work.
-
-Tutorials <https://www.youtube.com/watch?v=CW60zLLo2fw&list=PLyE0aREJRIBLMQREfAFXKSQydoI-h4Vfh>
+Thanks to Pande4360, jbusfield, and DJ for making the profile.  
+Thanks to MarkMon for making the Index Controller plugin.  
+Thanks to elliotttate for the Button and Gesture Mapper plugin.  
+Thanks to BlueScorpio for the no-motion-controls version of the profile.  
+Thanks to ODuis for creating Easy Injector and managing the database of profiles.  
+Thanks to Praydog for creating UEVR.
