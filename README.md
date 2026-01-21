@@ -27,6 +27,7 @@ You should also have already played some of Hogwarts Legacy without VR and be fa
 UEVR is a tool that injects VR support into Unreal Engine games that do not have it natively.
 * UEVR website <https://uevr.io>
 * UEVR Github <https://github.com/praydog/UEVR>
+* UEVR tutorials https://www.youtube.com/watch?v=CW60zLLo2fw&list=PLyE0aREJRIBLMQREfAFXKSQydoI-h4Vfh
 
 To use this directly, see instructions here --> [Praydog's injector + Nexus Mods](standard-injector-instructions.md)
 
@@ -195,59 +196,82 @@ If the `Ctrl + Alt + U` keyboard shortcut is not working, or you just don't want
 
 Change profile configuration options in the [Hogwarts Config](#profile-configuration-options) tab of the UEVR settings menu.
 
+Learn more about UEVR https://www.youtube.com/watch?v=CW60zLLo2fw&list=PLyE0aREJRIBLMQREfAFXKSQydoI-h4Vfh
+
 ## Troubleshooting
 
 1. I can't move! 😭  
    * Close the UEVR menu, not just collapse it. Click the X, or press Insert on keyboard, or press in both controller thumb-sticks.
-   * [Epic Games Store](#epic-games-store)
-   * Valve Index controllers https://github.com/mark-mon/uevr-index-controls
+   * [Epic Games Store](#epic-games-store) fix
+   * Valve Index controller scripts from markmon
+     * New solution https://discord.com/channels/747967102895390741/1389994633563476129/1436910070544728125
+     * ~~old https://github.com/mark-mon/uevr-index-controls~~
 
 2. If HMD shows a black screen and everything freezes, then **turn off Frame Generation** in the game's settings.  
    This is _not_ the same as re-projection/space-warp/SSW/ASW that is done by the VR renderer.  
    ![](images/frame-generation.png)  
    
-3. Turn off **HAGS** (Hardware Accelerated GPU Scheduling) in Windows settings and restart your computer.  
+3. I turned off DLSS Frame Generation, but the red warning in the UEVR settings is still there.  
+   ![](images/UEVR%20warning%20DLSS%20frame%20generation.webp)  
+   That is ok. The warning will not go away.  
+   And this is different from DLSS Upscaling, which you actually need turned on for decent performance.
+
+4. OpenXR not loaded  
+   You need to have your VR headset on your head and connected to your PC _before_ pressing the Inject button.  
+   You can also press "Attempt to reinitialize" once you have your headset on.
+
+5. Turn off **HAGS** (Hardware Accelerated GPU Scheduling) in Windows settings and restart your computer.  
    
-4. Did you forget to set OpenXR in UEVR Easy Injector and set the proper runtime?  
+6. Did you forget to set OpenXR in UEVR Easy Injector and set the proper runtime?  
    Review [Connect your VR Headset](#connect-your-vr-headset)  
    
-5. Not in 1st person?  
+7. Not in 1st person?  
    See [Profile Configuration Options](#profile-configuration-options)  
    
-6. I'm moving in the wrong direction! Help!    
+8. I'm moving in the wrong direction! Help!    
    Change your locomotion mode in the [Profile Configuration Options](#profile-configuration-options)  
    
-7. My spells go in a different direction than where I am pointing!  
+9. My spells go in a different direction than where I am pointing!  
    Like this? https://www.youtube.com/watch?v=42K68ElOtok  
    
    'Camera-relative targeting' needs to be set to ON.  
    This is in the Hogwarts game settings. Not in UEVR settings.  
    
-8. Why is the [B] button not going back in menus?  
-   Why is the [X] button dodging and not interacting?  
-   See [Swapped B and X buttons](#swapped-b-and-x-buttons)  
+10. Why is the [B] button not going back in menus?  
+    Why is the [X] button dodging and not interacting?  
+    See [Swapped B and X buttons](#swapped-b-and-x-buttons)  
    
-9. Cracked/pirated versions of the game do not work! 🏴‍☠️🚫  
+11. Cracked/pirated versions of the game do not work! 🏴‍☠️🚫  
    
-10. My hands and wand keep getting disconnected from the controllers.  
+12. My hands and wand keep getting disconnected from the controllers.  
     Unfortunately, this happens because of a flaw in UEVR, not the profile. It has been investigated and [confirmed](https://discord.com/channels/747967102895390741/1363692053229207792/1404595131780431964) by the profile creator.  
     You must use the profile's built-in workaround of ["grabbing your right ear"](#wand)  
     The detachment occurs more frequently within Hogwarts castle.  
    
-11. You need to be using the **Nightly** version of UEVR. At least version 1096. But the latest nightly is probably also good.  
+13. You need to be using the **Nightly** version of UEVR. At least version 1096. But the latest nightly is probably also good.  
     Easy Injector has an easy button to upgrade to the latest version. Or change to any specific version.  
     ![](images/08.1-uevr-easy-upgrade-button.png)  
     If instead you are using the standard UEVR executable, then you need to download the Nightly build from GitHub https://github.com/praydog/UEVR-nightly/releases/  
     The profile does not work on the release version 1.05  
     Do not ask how you can see which version you have, because it's not straightforward. Just get the Nightly.  
     
-12. For PSVR2 users, you might need to adjust Steam Input bindings to make the system/menu button work.  
+14. For PSVR2 users, you might need to adjust Steam Input bindings to make the system/menu button work.  
     See this YouTube video https://www.youtube.com/watch?app=desktop&v=hIOpeIlQwl8&t=770s  
     And see the section of this guide on the multiple [D-pad shifting modes](#d-pad)
     
-13. There have been issues with Nvidia GPU drivers for many UEVR games.  
+15. There have been issues with Nvidia GPU drivers for many UEVR games.  
     Crashing is the most commonly reported issue.  
     It has been recommended to stay on, or downgrade to, v566
+
+16. Do not run UEVR as an administrator.  
+    Do not run SteamVR as an administrator.  
+    Do not run Steam as an administrator.  
+    Do not run the game as an administrator.  
+    https://discord.com/channels/747967102895390741/1363692053229207792/1455599104263458866
+
+17. Hands are off center?  
+    UEVR has a button to re-center the camera.  
+    Learn how to use UEVR with these tutorial videos https://www.youtube.com/watch?v=CW60zLLo2fw&list=PLyE0aREJRIBLMQREfAFXKSQydoI-h4Vfh
 
 ## Performance
 
@@ -372,6 +396,11 @@ Tips from [profile author 'jbusfield' — 2025-03-05](https://discord.com/channe
 > Be very deliberate with your strokes.  
 > If the drawing system does not detect that what you have drawn so far will result in a valid glyph, then it will stop detecting and vibrate your controller as you saw in your first attempt.  
 > Drawing direction goes from the thick end of the line to the thin end in the examples in the spell menu.
+
+The drawing of gestures can be made more forgiving by changing a number in the script file `%appdata%\UnrealVRMod\HogwartsLegacy\scripts\gestures\gestures_vector.lua`  
+Change `local maxDistanceDeviation = 12` to a higher number like 20 or 25.  
+The higher the number is, the more you risk having it detect the glyph you're trying to draw as a different glyph.  
+From [profile author 'jbusfield' — 2025-09-23](https://discord.com/channels/747967102895390741/1363692053229207792/1420154004507459746)
 
 ### Menu & Map
 
