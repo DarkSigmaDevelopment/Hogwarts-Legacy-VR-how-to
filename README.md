@@ -276,12 +276,15 @@ Learn more about UEVR https://www.youtube.com/watch?v=CW60zLLo2fw&list=PLyE0aREJ
 ## Performance
 
 In-game settings
-1. Turn off ray-tracing
-2. Turn graphics preset down to Low
-3. Turn on DLSS upscaling to Performance mode
+1. Turn off ray-tracing.
+2. Turn graphics preset down to Low.
+3. Turn on DLSS Upscaling to Performance mode.  
+   This is different from DLSS Frame Generation, which must be turned off.
 
 If the in-game settings don't get you a frame-rate that you find acceptable, then lower the resolution, framerate, and/or bit-rate in the settings of your PC link software (Virtual Desktop, Meta Link, SteamVR, etc.)  
 A restart of the game is likely required
+
+UEVR also has a resolution slider in the [settings menu](#open-uevr-settings-in-game).
 
 Remember, this game was not meant to run in VR. It is not optimized for it at all. It's already hardware intensive when flat 4K at 60 fps, and we're shoving VR down its throat. That means everything is rendered twice, once for each eye's perspective, at higher resolutions and higher frame-rate.
 
@@ -349,7 +352,7 @@ What the d-pad does is the same as in the flat game (non-VR)
 Move your right hand, and the wand moves (motion controlled)
 
 Can't see it? Try pressing the trigger to cast a spell.  
-If it gets detached from your controller and stuck in the world, then just "grab your right ear": hold the right controller up to your right ear near  your HMD and press the grip button.  
+If it gets detached from your controller and stuck in the world, then just "grab your right ear": hold the right controller up to your right ear near your HMD and press the grip button.  
 If it still doesn't appear, you may need to restart the game.
 
 Cast other spells by holding the trigger and moving the analog-stick up/down/left/right to cast the corresponding spell as seen on the HUD.  
@@ -429,7 +432,7 @@ Move the right analog-stick down to dodge.
 ### Swapped [B] and [X] buttons
 
 By default, UEVR maps the [B] button of your right-hand motion controller to act as the [X] button of an Xbox controller.  
-In Hogwarts Legacy, this is used to interact with objects, or cast the spell assigned to the West slot.
+In Hogwarts Legacy, this is used to interact with objects, or to cast the spell assigned to the West slot.
 
 UEVR also maps the [X] button of your left-hand motion controller (for Valve Index, that's the other [A] on your left-hand) to act as the [B] button of an Xbox controller.  
 In Hogwarts Legacy, this is used to dodge, cast the spell assigned to the East slot, or go back in a menu.
