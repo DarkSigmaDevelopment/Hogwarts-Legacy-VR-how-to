@@ -204,8 +204,8 @@ Learn more about UEVR https://www.youtube.com/watch?v=CW60zLLo2fw&list=PLyE0aREJ
    * Close the UEVR menu, not just collapse it. Click the X, or press Insert on keyboard, or press in both controller thumb-sticks.
    * [Epic Games Store](#epic-games-store) fix
    * Valve Index controller scripts from markmon
-     * New solution https://discord.com/channels/747967102895390741/1389994633563476129/1436910070544728125
-     * ~~old https://github.com/mark-mon/uevr-index-controls~~
+     https://discord.com/channels/747967102895390741/1389994633563476129/1457414343292358908
+     ![](https://media.discordapp.net/attachments/1389994633563476129/1389994633819455619/384337745-9fc0c833-edb9-4b59-a54b-1d823b63ee28.png?ex=69aaf5e1&is=69a9a461&hm=25c3de891e8c2879b8dc4eacfbccd244bc22d5b33d588cdc5ef16b700d22b3f3&=&format=webp&quality=lossless&width=1360&height=839)
 
 2. If HMD shows a black screen and everything freezes, then **turn off Frame Generation** in the game's settings.  
    This is _not_ the same as re-projection/space-warp/SSW/ASW that is done by the VR renderer.  
@@ -417,12 +417,14 @@ See [Profile Configuration Options](#profile-configuration-options)
 For other menus, the cursor is controlled with the analog-stick. Not motion control.
 
 If using **SteamVR**, then the "system" button will bring up the SteamVR overlay/dashboard.  
-This can be worked around by using voice commands, or a plugin that makes another button on your controller act as the system button.
-Easy Injector has a built-in voice commands feature. You need to set it up to press the keyboard key ESC (escape) for menu and [M] for map.
+This can be worked around by using voice commands, or with a plugin that makes another button on your controller act as the system button.  
+Easy Injector has a built-in voice commands feature. You need to set it up to press the keyboard key ESC (escape) for menu and [M] for map.  
 UEVR plugin options are
 1. [UEVR Button & Gesture Mapper](https://discord.com/channels/747967102895390741/1396212532368244857) by elliotttate
 2. [Quest Controller DPad Shift enhancement](https://discord.com/channels/747967102895390741/1445673926389923970) by markmon  
-   When using the thumbrest for dpad shift, it additionally enables thumbrest + left A = menu, thumbrest + left B = map.
+   When using the thumbrest for dpad shift, it additionally enables
+   * thumbrest + X = menu
+   * thumbrest + Y = map
 
 ### Jump and Dodge
 
