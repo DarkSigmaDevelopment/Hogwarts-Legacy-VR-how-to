@@ -61,6 +61,21 @@ https://github.com/oduis/UEVRDeluxe/releases/latest/download/UEVREasyInjector.ex
 
 <br>
 
+It is likely that your anti-virus software will automatically delete the installer to protect you.  
+This is because UEVR works its magic by injecting a DLL into your game.  
+And this is how many viruses work too.
+
+To get around this, you need to create an exception folder that will not be scanned by your anti-virus and save the installer into there.
+
+DISCLAIMER: use your own judgment about downloading software from the internet.
+
+You can follow this video for Windows Defender  
+https://youtu.be/zGiNGnX5dYg?si=VbbXUrOedsA1t35Q
+
+On the Easy Injector GitHub (or the direct link above), instead of left-clicking the installer link, right click it and choose "save as" to have it download to the folder you have chosen.
+
+<br>
+
 Once the installer is downloaded, run it.
 
 Windows Defender might warn you about running the installer.  
@@ -201,12 +216,14 @@ Learn more about UEVR https://www.youtube.com/watch?v=CW60zLLo2fw&list=PLyE0aREJ
 ## Troubleshooting
 
 1. I can't move! 😭  
-   * Close the UEVR menu, not just collapse it. Click the X, or press Insert on keyboard, or press in both controller thumb-sticks.
+   * Close the UEVR menu
+     * do not just collapse the UEVR menu by pressing the arrow on the top left
+     * instead, click the X button on the top right
+     * or press the Insert [INS] key on your keyboard
+     * or press in both controller thumb-sticks
    * [Epic Games Store](#epic-games-store) fix
-   * Valve Index controller scripts from markmon
-     https://discord.com/channels/747967102895390741/1389994633563476129/1457414343292358908
-     ![](https://media.discordapp.net/attachments/1389994633563476129/1389994633819455619/384337745-9fc0c833-edb9-4b59-a54b-1d823b63ee28.png?ex=69aaf5e1&is=69a9a461&hm=25c3de891e8c2879b8dc4eacfbccd244bc22d5b33d588cdc5ef16b700d22b3f3&=&format=webp&quality=lossless&width=1360&height=839)
-
+   * [Valve Index controllers](#valve-index-controllers) scripts from Markmon  
+  
 2. If HMD shows a black screen and everything freezes, then **turn off Frame Generation** in the game's settings.  
    This is _not_ the same as re-projection/space-warp/SSW/ASW that is done by the VR renderer.  
    ![](images/frame-generation.png)  
@@ -298,6 +315,33 @@ To fix this, remove the file
 Either rename it or move it to another folder.
 
 ⚠ WARNING: without this file, you may experience issues connecting to your WB Games account and installing official mods.
+
+## Valve Index Controllers
+
+These do not work well out-of-the-box with UEVR in general.  
+You need to import Markmon's script files.
+
+Download Markmon's zip from Discord  
+https://discord.com/channels/747967102895390741/1389994633563476129/1457414343292358908
+
+Extract the zip into `%appdata%\UnrealVrMod\` to create a `UEVR` folder alongside the HogwartsLegacy and other UEVR profiles.  
+Your folder/file structure should now look like this
+```
+%appdata%\UnrealVRMod\
+└── UEVR\
+    ├── _interaction_profiles_valve_index_controller.json
+    └── scripts\
+        └── index_openxr.lua
+```
+<small>(You can delete the `plugins\` sub-folder and the 0-byte dll inside it. That was to ensure proper replacement of an older version.)</small>
+
+In this location, the script acts as a global profile.  
+It will apply to all games you play with UEVR.
+
+If instead you only want this for Hogwart Legacy, then place the files in their respective folders inside the HogwartsLegacy profile directory.
+
+Now that you have Markmon's Valve Index Controller script installed, this image by Markmon shows how the controls work, corresponding to an Xbox controller.
+![](https://github.com/mark-mon/uevr-index-controls/blob/main/Controller%20Mapping%20Regular.png?raw=true)
 
 ## Controls
 
