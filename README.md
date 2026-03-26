@@ -61,6 +61,8 @@ https://github.com/oduis/UEVRDeluxe/releases/latest/download/UEVREasyInjector.ex
 
 <br>
 
+<a name="antivirus"></a>
+
 It is likely that your anti-virus software will automatically delete the installer to protect you.  
 This is because UEVR works its magic by injecting a DLL into your game.  
 And this is how many viruses work too.
@@ -321,27 +323,37 @@ Either rename it or move it to another folder.
 These do not work well out-of-the-box with UEVR in general.  
 You need to import Markmon's script files.
 
-Download Markmon's zip from Discord  
-https://discord.com/channels/747967102895390741/1389994633563476129/1457414343292358908
+Download Markmon's zip from GitHub  
+https://github.com/mark-mon/uevr-index-controls/releases
 
-Extract the zip into `%appdata%\UnrealVrMod\` to create a `UEVR` folder alongside the HogwartsLegacy and other UEVR profiles.  
+Extract the zip into `%appdata%\UnrealVRMod\` to create a `UEVR` folder alongside the HogwartsLegacy and other UEVR profiles.  
 Your folder/file structure should now look like this
 ```
 %appdata%\UnrealVRMod\
 └── UEVR\
-    ├── _interaction_profiles_valve_index_controller.json
-    └── scripts\
+    └── Profiles\
+    │   └── _interaction_profiles_valve_index_controller.json
+    └── Scripts\
         └── index_openxr.lua
 ```
-<small>(You can delete the `plugins\` sub-folder and the 0-byte dll inside it. That was to ensure proper replacement of an older version.)</small>
+<sup>(You can delete the `Plugins\` sub-folder and the dll inside it. That was to ensure proper replacement of an older version.)</sup>
 
 In this location, the script acts as a global profile.  
 It will apply to all games you play with UEVR.
 
-If instead you only want this for Hogwart Legacy, then place the files in their respective folders inside the HogwartsLegacy profile directory.
+If instead you only want this for Hogwart Legacy, then place the files inside the HogwartsLegacy profile directory like so:
+```
+%appdata%\UnrealVRMod\
+└── HogwartsLegacy\
+    └── _interaction_profiles_valve_index_controller.json
+    └── scripts\
+        └── index_openxr.lua
+```
 
 Now that you have Markmon's Valve Index Controller script installed, this image by Markmon shows how the controls work, corresponding to an Xbox controller.
 ![](https://github.com/mark-mon/uevr-index-controls/blob/main/Controller%20Mapping%20Regular.png?raw=true)
+
+There will also be a new tab inside the UEVR in-game menu to configure more.
 
 ## Controls
 
