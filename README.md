@@ -59,24 +59,20 @@ Take the latest version. This screenshot might be outdated.
 You can also get a **direct download** of the latest EXE by clicking here  
 https://github.com/oduis/UEVRDeluxe/releases/latest/download/UEVREasyInjector.exe
 
-<br>
-
 <a name="antivirus"></a>
-
-It is likely that your anti-virus software will automatically delete the installer to protect you.  
-This is because UEVR works its magic by injecting a DLL into your game.  
-And this is how many viruses work too.
-
-To get around this, you need to create an exception folder that will not be scanned by your anti-virus and save the installer into there.
-
-DISCLAIMER: use your own judgment about downloading software from the internet.
-
-You can follow this video for Windows Defender  
-https://youtu.be/zGiNGnX5dYg?si=VbbXUrOedsA1t35Q
-
-On the Easy Injector GitHub (or the direct link above), instead of left-clicking the installer link, right click it and choose "save as" to have it download to the folder you have chosen.
-
-<br>
+> [!TIP]  
+> It is likely that your anti-virus software will automatically delete the installer to protect you.  
+> This is because UEVR works its magic by injecting a DLL into your game.  
+> And this is how many viruses work too.
+> 
+> To get around this, you need to create an exception folder that will not be scanned by your anti-virus and save the installer into there.
+> 
+> DISCLAIMER: use your own judgment about downloading software from the internet.
+> 
+> You can follow this video for Windows Defender  
+> https://youtu.be/zGiNGnX5dYg?si=VbbXUrOedsA1t35Q
+> 
+> On the Easy Injector GitHub (or the direct link above), instead of left-clicking the installer link, right click it and choose "save as" to have it download to the folder you have chosen.
 
 Once the installer is downloaded, run it.
 
@@ -328,7 +324,7 @@ https://github.com/mark-mon/uevr-index-controls/releases
 
 Extract the zip into `%appdata%\UnrealVRMod\` to create a `UEVR` folder alongside the HogwartsLegacy and other UEVR profiles.  
 Your folder/file structure should now look like this
-```
+```[markmon_index_openxr.lua](../../../AppData/Roaming/UnrealVRMod/UEVR/scripts/disabled/markmon_index_openxr.lua)
 %appdata%\UnrealVRMod\
 └── UEVR\
     └── Profiles\
@@ -350,10 +346,16 @@ If instead you only want this for Hogwart Legacy, then place the files inside th
         └── index_openxr.lua
 ```
 
+You will know you have installed it correctly when there is a new tab "Index Controller Plugin" inside the UEVR in-game menu to configure more.
+![](images/markmon%20index%20controller%20plugin%20UEVR%20tab.png)
+
+> [!IMPORTANT]  
+> You must have UEVR set to OpenXR for this script to work.  
+> If you are set to OpenVR, then you might see the config tab, but it will not be working as intended.  
+> <sub>(see line 386 in the lua file)</sub>
+
 Now that you have Markmon's Valve Index Controller script installed, this image by Markmon shows how the controls work, corresponding to an Xbox controller.
 ![](https://github.com/mark-mon/uevr-index-controls/blob/main/Controller%20Mapping%20Regular.png?raw=true)
-
-There will also be a new tab inside the UEVR in-game menu to configure more.
 
 ## Controls
 
