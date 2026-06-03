@@ -324,7 +324,7 @@ https://github.com/mark-mon/uevr-index-controls/releases
 
 Extract the zip into `%appdata%\UnrealVRMod\` to create a `UEVR` folder alongside the HogwartsLegacy and other UEVR profiles.  
 Your folder/file structure should now look like this
-```[markmon_index_openxr.lua](../../../AppData/Roaming/UnrealVRMod/UEVR/scripts/disabled/markmon_index_openxr.lua)
+```
 %appdata%\UnrealVRMod\
 └── UEVR\
     └── Profiles\
@@ -337,7 +337,7 @@ Your folder/file structure should now look like this
 In this location, the script acts as a global profile.  
 It will apply to all games you play with UEVR.
 
-If instead you only want this for Hogwart Legacy, then place the files inside the HogwartsLegacy profile directory like so:
+If instead you only want this for Hogwarts Legacy, then place the files inside the HogwartsLegacy profile directory like so:
 ```
 %appdata%\UnrealVRMod\
 └── HogwartsLegacy\
@@ -345,17 +345,58 @@ If instead you only want this for Hogwart Legacy, then place the files inside th
     └── scripts\
         └── index_openxr.lua
 ```
+<sup>(The json is _not_ in a `profiles\` folder.)</sup>
 
 You will know you have installed it correctly when there is a new tab "Index Controller Plugin" inside the UEVR in-game menu to configure more.
 ![](images/markmon%20index%20controller%20plugin%20UEVR%20tab.png)
 
 > [!IMPORTANT]  
-> You must have UEVR set to OpenXR for this script to work.  
+> You must have UEVR set to **OpenXR** for this script to work.  
 > If you are set to OpenVR, then you might see the config tab, but it will not be working as intended.  
 > <sub>(see line 386 in the lua file)</sub>
 
 Now that you have Markmon's Valve Index Controller script installed, this image by Markmon shows how the controls work, corresponding to an Xbox controller.
 ![](https://github.com/mark-mon/uevr-index-controls/blob/main/Controller%20Mapping%20Regular.png?raw=true)
+
+## Vive Wand Controllers
+
+These do not work well out-of-the-box with UEVR in general.  
+You need to import Markmon's script files.
+
+Download Markmon's zip from GitHub  
+https://github.com/mark-mon/UEVR-vive-wand-controls/releases
+
+Extract the zip into `%appdata%\UnrealVRMod\` to create a `UEVR` folder alongside the HogwartsLegacy and other UEVR profiles.  
+Your folder/file structure should now look like this
+```
+%appdata%\UnrealVRMod\
+└── UEVR\
+    └── Profiles\
+    │   └── _interaction_profiles_htc_vive_controller.json
+    └── Plugins\
+        └── ViveHaptic.dll
+```
+
+In this location, the script acts as a global profile.  
+It will apply to all games you play with UEVR.
+
+If instead you only want this for Hogwarts Legacy, then place the files inside the HogwartsLegacy profile directory like so:
+```
+%appdata%\UnrealVRMod\
+└── HogwartsLegacy\
+    └── _interaction_profiles_htc_vive_controller.json
+    └── plugins\
+        └── ViveHaptic.dll
+```
+<sup>(The json is _not_ in a `profiles\` folder.)</sup>
+
+> [!IMPORTANT]  
+> You must have UEVR set to **OpenXR** for this script to work.  
+> If you are set to OpenVR, then it will not be working as intended.  
+> <sub>(see [line 138 in main.cpp](https://github.com/mark-mon/UEVR-vive-wand-controls/blob/main/main.cpp#L138))</sub>
+
+Now that you have Markmon's Valve Index Controller script installed, this image by Markmon shows how the controls work, corresponding to an Xbox controller.
+![](https://github.com/mark-mon/UEVR-vive-wand-controls/blob/main/Controller%20Mapping.jpg?raw=true)
 
 ## Controls
 
