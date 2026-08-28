@@ -123,6 +123,17 @@ Also see [Profile Configuration Options](#profile-configuration-options) for add
 
 If you want to play in 1st person with an Xbox controller, without motion controls, then see the section [Disable Motion Controls](#disable-motion-controls).
 
+> [!NOTE]  
+> 2026-08-24  
+> The profile has been augmented by Discord user RenanMartins to include an Inverse Kinematics (IK) player body.  
+> Discord post: https://discord.com/channels/747967102895390741/1363692053229207792/1541525422523682826  
+> GitHub page: https://github.com/renangto15722-arch/Hogwarts-Legacy-VR-Body-IK-Profile/tree/main  
+>
+> At the time of this writing, this new profile is not yet available to install through Oduis's Easy Injector.  
+> So for now, you have to manually download the zip and extract it to `%appdata%\UnrealVRMod\HogwartsLegacy\`  
+> Be sure to completely delete your existing HogwartsLegacy profile folder first.  
+> You can and should still use Oduis's Easy Injector to [inject](#injecting) and keep the UEVR backend updated.
+
 ### Connect your VR headset
 
 Connect your VR HMD (head mounted display) to your PC.
@@ -139,7 +150,7 @@ Even if your HMD _can_ work with OpenVR, OpenXR is newer and will provide the be
 
 <br>
 
-If Meta Quest as your HMD, then there are a few software options for connecting to your PC
+If Meta Quest is your HMD, then there are a few software options for connecting to your PC
 
 | Method                                                                                | Type          | Cost | OpenXR Runtime | Notes                                                                                                           |
 |---------------------------------------------------------------------------------------|---------------|------|----------------|-----------------------------------------------------------------------------------------------------------------|
@@ -456,7 +467,7 @@ If it still doesn't appear, you may need to restart the game.
 
 Cast other spells by holding the trigger and moving the analog-stick up/down/left/right to cast the corresponding spell as seen on the HUD.  
 This is a special feature of this profile when enhanced controller mode is on in the [Hogwarts Config](#profile-configuration-options) tab.  
-The buttons [A] [B] [X] [Y] also work to cast spells, just like in flat mode (non-VR).
+The buttons \[A] \[B] \[X] \[Y] also work to cast spells, just like in flat mode (non-VR).
 
 To **open chests** or collect **field guide pages** or otherwise interact with things, point the wand at it and press [B] on you right-hand Quest controller.  
 Be sure you're pointing well and can see the button prompt to Press X (but actuality press B).
@@ -598,17 +609,17 @@ There is a "Hogwarts Config" tab in the [UEVR settings](#open-uevr-settings-in-g
 
 ![](images/14-uevr-settings-profile-settings-UI.png)
 
-| Option                    | Description                                                                                                                                                                                                                                                                                                                                                                                          |
-|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Locomotion Mode           | When moving with the left stick, should the character move in the direction that your head is facing, the direction that your wand hand is pointing, or not be affected by VR tracking at all and require the right stick to turn.                                                                                                                                                                   |
-| Target Mode               | Auto target = Spells go toward where you point. <br/>Manual target = you must lock on to an enemy or object by pressing in on the right thumb-stick and change targets by moving the right thumb-stick left and right.                                                                                                                                                                               |
-| Controller Mode           | When on "Enhanced", equiped spells can be cast with the right thumb-stick while the right trigger is held down.                                                                                                                                                                                                                                                                                      |
-| Gesture Mode              | Cast spells by drawing glyphs in the air. <br/>See [Glyph Gestures](#glyph-gestures)                                                                                                                                                                                                                                                                                                                 |
-| Manual Hide Wand          | When off, the wand will automaticaly disapear when not in use. <br/>When on, hold your wand down by your side and press grip to make it disapear. <br/>The wand will always come back when casting a spell. <br/>If your wand and/or hands detach from your motion controllers, then "grab your right ear": hold the right controller up to your right ear near your HMD and press the grip button. |
-| First Person Cinematics   | Even with "First Person View" on, the cutscenes will still be in 3rd person, unless you have this option enabled too.                                                                                                                                                                                                                                                                                |
-| Enable Volumetric Fog     | The game has a lot of fog. Even inside the castle. Turn it off to see better and not have interior spaces look washed out.                                                                                                                                                                                                                                                                           |
-| Curson follows controller | On most pause menu screens, move your right controller to move the pointer, instead of needing to use the right thumb-stick.                                                                                                                                                                                                                                                                         |
-| Attach UI to View         | The HUD (mini-map, health, spells, quest markers, etc.) will stay in front of you when you turn your head.                                                                                                                                                                                                                                                                                           |
+| Option                    | Description                                                                                                                                                                                                                                                                                                                                                                                           |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Locomotion Mode           | When moving with the left stick, should the character move in the direction that your head is facing, the direction that your wand hand is pointing, or not be affected by VR tracking at all and require the right stick to turn.                                                                                                                                                                    |
+| Target Mode               | Auto target = Spells go toward where you point. <br/>Manual target = you must lock on to an enemy or object by pressing in on the right thumb-stick and change targets by moving the right thumb-stick left and right.                                                                                                                                                                                |
+| Controller Mode           | When on "Enhanced", equiped spells can be cast with the right thumb-stick while the right trigger is held down.                                                                                                                                                                                                                                                                                       |
+| Gesture Mode              | Cast spells by drawing glyphs in the air. <br/>See [Glyph Gestures](#glyph-gestures)                                                                                                                                                                                                                                                                                                                  |
+| Manual Hide Wand          | When off, the wand will automaticaly disapear when not in use. <br/>When on, hold your wand down by your side and press grip to make it disapear. <br/>The wand will always come back when casting a spell. <br/>If your wand and/or hands detach from your motion controllers, then "grab your right ear": hold the right controller up to your right ear near your HMD and press the grip button.   |
+| First Person Cinematics   | Even with "First Person View" on, the cutscenes will still be in 3rd person, unless you have this option enabled too.                                                                                                                                                                                                                                                                                 |
+| Enable Volumetric Fog     | The game has a lot of fog. Even inside the castle. Turn it off to see better and not have interior spaces look washed out.                                                                                                                                                                                                                                                                            |
+| Curson follows controller | On most pause menu screens, move your right controller to move the pointer, instead of needing to use the right thumb-stick.                                                                                                                                                                                                                                                                          |
+| Attach UI to View         | The HUD (mini-map, health, spells, quest markers, etc.) will stay in front of you when you turn your head.                                                                                                                                                                                                                                                                                            |
 
 
 ## Disable motion-controls
