@@ -1,5 +1,10 @@
 # A Guide to Hogwarts Legacy in VR
 
+New profile 2.x from jbusfield!
+https://github.com/jbusfield/HL_UEVR
+
+This guide covers profile v1.08c
+
 Join the **[Flat2VR Discord](https://flat2vr.com)**
 1. Press "Join channels" in [#ue-join](https://discord.com/channels/747967102895390741/1062011861354164314) to reveal the Unreal Engine category of channels
 2. Then, come chat in [#ue-hogwarts](https://discord.com/channels/747967102895390741/1363692053229207792)
@@ -105,7 +110,7 @@ Press "Search profile"
 
 <br>
 
-Select the latest 1<sup>st</sup> Person profile created by Pande4360, jbusfield, DJ  
+Select the version 1.08c 1<sup>st</sup> Person profile created by Pande4360, jbusfield, DJ  
 Then press "Install"
 
 ![](images/05-uevr-easy-profile-selection-and-install.png)
@@ -113,26 +118,26 @@ Then press "Install"
 This profile is created by Discord users Pande4360, jbusfield, and DJ
 It can also be downloaded from Nexus Mods  
 https://www.nexusmods.com/hogwartslegacy/mods/2264  
-Or GitHub  
+
+There is also a newer v2.x profile from jbusfield with instructions for installation and play on their GitHub repository 
 https://github.com/jbusfield/HL_UEVR
 
-You can play Hogwarts Legacy in VR without this profile.  
+You could play Hogwarts Legacy in VR without these profiles.  
 It will be in 3rd person, controlled by your Xbox controller, or keyboard and mouse.  
-If you want to play in 1st person with motion controls, then you need this profile.  
+But if you want to play in 1st person with motion controls, then you need one of these profiles.  
 Also see [Profile Configuration Options](#profile-configuration-options) for additional settings you can change provided by this profile.
 
 If you want to play in 1st person with an Xbox controller, without motion controls, then see the section [Disable Motion Controls](#disable-motion-controls).
 
 > [!NOTE]  
 > 2026-08-24  
-> The profile has been augmented by Discord user RenanMartins to include an Inverse Kinematics (IK) player body.  
+> The v1.08c profile has been augmented by Discord user RenanMartins to include an Inverse Kinematics (IK) player body.  
 > Discord post: https://discord.com/channels/747967102895390741/1363692053229207792/1541525422523682826  
 > GitHub page: https://github.com/renangto15722-arch/Hogwarts-Legacy-VR-Body-IK-Profile/tree/main  
 >
-> At the time of this writing, this new profile is not yet available to install through Oduis's Easy Injector.  
-> So for now, you have to manually download the zip and extract it to `%appdata%\UnrealVRMod\HogwartsLegacy\`  
-> Be sure to completely delete your existing HogwartsLegacy profile folder first.  
-> You can and should still use Oduis's Easy Injector to [inject](#injecting) and keep the UEVR backend updated.
+> There is also a profile by Charlotte Liu with "intuitive gesture casting" features.
+> It is available on Nexus Mods
+> https://www.nexusmods.com/hogwartslegacy/mods/2423
 
 ### Connect your VR headset
 
